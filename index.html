@@ -154,7 +154,7 @@ nav.scrolled{box-shadow:0 10px 30px -18px rgba(16,20,26,.14)}
 .cloud-l h2{font-size:23px;font-weight:500;letter-spacing:-.015em;color:var(--indigo);line-height:1.4;margin-bottom:auto}
 .cloud-l h2 b{color:var(--ink);font-weight:600}
 .cloud-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
-.pcard{background:var(--panel);border:1px solid var(--line);border-radius:10px;height:96px;display:flex;align-items:center;gap:13px;padding:0 18px;color:var(--ink-2);transition:all .25s var(--ease);position:relative;overflow:hidden}
+.pcard{background:var(--panel);border:1px solid var(--line);border-radius:10px;height:132px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:11px;padding:20px 12px;color:var(--ink-2);transition:all .25s var(--ease);position:relative;overflow:hidden}
 .picon{width:34px;height:34px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .picon svg{width:100%;height:100%;display:block}
 .picon.wide{width:46px}
@@ -509,7 +509,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--lime-tx);outline-of
   .case-r{min-height:230px}
   .kpi{padding:26px 20px}
   .cloud-grid{gap:8px}
-  .pcard{height:84px;padding:0 14px;gap:10px}
+  .pcard{height:112px;padding:16px 10px;gap:8px}
   .picon{width:28px;height:28px}
   .picon.wide{width:38px}
   .pname{font-size:13.5px}
@@ -524,10 +524,10 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--lime-tx);outline-of
 
 /* --- P. Integraciones: glifos oficiales, tratamiento mono → color al hover --- */
 /* --- P. Integraciones: texto sin recorte, alineado, glifos con color de marca permanente --- */
-.pname{font-family:var(--sans);font-weight:600;font-size:14.5px;color:#2E3430;letter-spacing:-.005em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pname{font-family:var(--sans);font-weight:600;font-size:14.5px;color:#2E3430;letter-spacing:-.005em;white-space:normal;text-align:center;line-height:1.25}
 .pname i{font-style:normal;color:var(--ink-3);font-weight:500}
 .pcard.ml .pname{color:#2D3277}
-.az{display:flex;flex-direction:column;align-items:flex-start;gap:2px;justify-content:center}
+.az{display:flex;flex-direction:column;align-items:center;gap:4px;justify-content:center}
 .az-tx{font-family:var(--sans);font-weight:700;font-size:18px;letter-spacing:-.03em;color:#2E3430;line-height:1}
 
 /* --- Q. Card 02: gráfico de precios --- */
@@ -686,7 +686,13 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--lime-tx);outline-of
 
         <div class="pcard ml" style="--bc:#FFE600" title="Mercado Libre">
           <span class="picon">
-            <svg viewBox="0 0 34 34" width="34" height="34"><rect x="1" y="1" width="32" height="32" rx="9" fill="#FFE600"/><path d="M9 20c1.6-4.4 4.6-6.8 8-6.8s6.4 2.4 8 6.8" fill="none" stroke="#2D3277" stroke-width="2.6" stroke-linecap="round"/><circle cx="17" cy="12.4" r="2.5" fill="#2D3277"/></svg>
+            <svg viewBox="0 0 34 34" width="34" height="34">
+              <circle cx="17" cy="17" r="16" fill="#FFE600"/>
+              <path d="M7.5 24.5 Q11 17.5 16 16.3" fill="none" stroke="#2D3277" stroke-width="3" stroke-linecap="round"/>
+              <path d="M26.5 24.5 Q23 17.5 18 16.3" fill="none" stroke="#2D3277" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="15.6" cy="16" r="2.3" fill="#2D3277"/>
+              <circle cx="18.4" cy="16" r="2.3" fill="#2D3277"/>
+            </svg>
           </span>
           <span class="pname">Mercado Libre</span>
         </div>
