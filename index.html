@@ -532,7 +532,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--lime-tx);outline-of
 
 /* --- Q. Card 02: gráfico de precios --- */
 .chart-art .pchart{position:absolute;inset:0;width:100%;height:100%}
-.chart-art .ln{stroke-dasharray:600;stroke-dashoffset:600;transition:stroke-dashoffset 1.6s var(--ease) .2s}
+.chart-art .ln{stroke-dasharray:1500;stroke-dashoffset:1500;transition:stroke-dashoffset 1.6s var(--ease) .2s}
 .chart-art .ln.comp{stroke-dasharray:5 4 !important;stroke-dashoffset:0;opacity:0;transition:opacity .8s ease .9s}
 .stg.in .chart-art .ln.you{stroke-dashoffset:0}
 .stg.in .chart-art .ln.comp{opacity:1}
@@ -813,19 +813,19 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--lime-tx);outline-of
 
       <div class="bcard w3">
         <div class="b-art chart-art" style="height:260px">
-          <svg class="pchart" viewBox="0 0 320 210" preserveAspectRatio="none" aria-hidden="true">
+          <svg class="pchart" viewBox="0 0 1000 260" preserveAspectRatio="none" aria-hidden="true">
             <g stroke="rgba(16,20,26,.07)" stroke-width="1">
-              <line x1="0" y1="52" x2="320" y2="52"/><line x1="0" y1="96" x2="320" y2="96"/>
-              <line x1="0" y1="140" x2="320" y2="140"/><line x1="0" y1="184" x2="320" y2="184"/>
+              <line x1="0" y1="55" x2="1000" y2="55"/><line x1="0" y1="110" x2="1000" y2="110"/>
+              <line x1="0" y1="165" x2="1000" y2="165"/><line x1="0" y1="215" x2="1000" y2="215"/>
             </g>
-            <path class="ln comp" d="M0 88 L64 86 L128 84 L176 84 L176 128 L240 130 L320 132" fill="none" stroke="#E5484D" stroke-width="2" stroke-dasharray="5 4"/>
-            <circle cx="176" cy="128" r="4" fill="#E5484D"/>
-            <path class="ln you" d="M0 96 L72 94 L140 92 L208 90 L262 88 L320 86" fill="none" stroke="#4E8A00" stroke-width="2.4"/>
-            <path d="M0 96 L72 94 L140 92 L208 90 L262 88 L320 86 L320 210 L0 210 Z" fill="rgba(121,201,0,.07)"/>
+            <path class="ln comp" d="M0 140 L160 137 L320 134 L440 132 L560 132 L560 190 L700 192 L850 194 L1000 196" fill="none" stroke="#E5484D" stroke-width="2.4" stroke-dasharray="6 5"/>
+            <circle cx="560" cy="190" r="5" fill="#E5484D"/>
+            <path class="ln you" d="M0 152 L160 146 L320 138 L440 130 L560 122 L700 112 L850 101 L1000 92" fill="none" stroke="#4E8A00" stroke-width="3"/>
+            <path d="M0 152 L160 146 L320 138 L440 130 L560 122 L700 112 L850 101 L1000 92 L1000 260 L0 260 Z" fill="rgba(121,201,0,.08)"/>
           </svg>
           <div class="buybox">Buy Box <span class="pos" id="posOdo">#1</span><span style="color:var(--ink-3)">·</span><span id="posState" style="color:var(--emerald)">protegido</span></div>
-          <span class="rtag you" style="bottom:78px;left:16px">VOS · $41.900</span>
-          <span class="rtag comp" style="top:118px;right:14px">TECNOHOGAR · −8%</span>
+          <span class="rtag you" style="top:138px;left:16px">VOS · $41.900</span>
+          <span class="rtag comp" style="top:198px;right:14px">TECNOHOGAR · −8%</span>
         </div></div>
         <div class="b-txt">
           <div class="b-num">02</div>
