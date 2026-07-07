@@ -586,7 +586,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--lime-tx);outline-of
   <canvas class="waves-b" id="wavesB"></canvas>
   <div class="hero-in">
     <div>
-      <div class="pill ent ent-1"><span class="dot"></span>Márgenes recalculados hoy <span class="val odo" id="tick"></span></div>
+      <div class="pill ent ent-1"><span class="dot"></span>Oportunidades detectadas hoy <span class="val odo" id="tick"></span></div>
       <h1 class="ent ent-2">Tu negocio, <em>en vivo en WhatsApp.</em></h1>
       <p class="sub ent ent-3">Qomers es el copiloto que revela tu <b>ganancia real</b>, vigila a tu competencia en Mercado Libre y ejecuta mejoras de precio por vos, siempre <b>bajo tu aprobación</b>.</p>
       <div class="hero-ctas ent ent-4">
@@ -1120,9 +1120,9 @@ const fmtES = n => n.toLocaleString('es-AR');
 
 try{ /* ticker */
 const tick = document.getElementById('tick');
-let tv = 1842930;
+let tv = 2847;
 odoRender(tick, fmtES(tv));
-setInterval(()=>{ tv += Math.floor(Math.random()*40)+6; odoSet(tick, fmtES(tv)); }, 1400);
+setInterval(()=>{ tv += Math.floor(Math.random()*3)+1; odoSet(tick, fmtES(tv)); }, 2600);
 }catch(_eticker){}
 
 try{ /* marquee */
