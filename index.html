@@ -137,13 +137,13 @@ nav.scrolled{box-shadow:0 10px 30px -18px rgba(16,20,26,.14)}
 .sec-head::before{content:"";position:absolute;left:-41px;top:6px;width:2px;height:0;background:var(--lime);transition:height .6s var(--ease) .15s}
 .sec-head.in::before{height:26px}
 .sec-head h2{font-family:var(--disp);font-size:clamp(26px,3.4vw,36px);font-weight:600;letter-spacing:-.02em;line-height:1.14;max-width:600px}
-.sec-head h2 span{color:var(--ink-3)}
+.sec-head h2 span{color:var(--indigo)}
 .eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--lime);margin-bottom:14px;display:block}
 
 /* integrations cloud (heading+CTA left, logo grid right) */
 .cloud{display:grid;grid-template-columns:320px 1fr;gap:40px;align-items:stretch}
 .cloud-l{display:flex;flex-direction:column;align-items:flex-start;gap:32px}
-.cloud-l h2{font-size:23px;font-weight:500;letter-spacing:-.015em;color:var(--ink-2);line-height:1.4;margin-bottom:auto}
+.cloud-l h2{font-size:23px;font-weight:500;letter-spacing:-.015em;color:var(--indigo);line-height:1.4;margin-bottom:auto}
 .cloud-l h2 b{color:var(--ink);font-weight:600}
 .cloud-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
 .pcard{background:var(--panel);border:1px solid var(--line);border-radius:10px;height:96px;display:flex;align-items:center;gap:13px;padding:0 18px;color:var(--ink-2);transition:all .25s var(--ease);position:relative;overflow:hidden}
@@ -387,7 +387,9 @@ html,body{overflow-x:clip;max-width:100%}
   --lime-tx-strong:#3E7000;   /* small text / chips */
   --emerald-tx:#0B7A4E;
   --ink-3:#6E7772;            /* bumped from #8A928D for legibility */
+  --indigo:#4F46E5;           /* vivid secondary accent, replaces grey de-emphasis */
 }
+.sec-head h2 span{color:var(--indigo)}
 .eyebrow{color:var(--lime-tx-strong)}
 .b-num{color:var(--lime-tx)}
 .pill .val,.mstat .v{color:var(--lime-tx-strong);background:rgba(121,201,0,.16)}
