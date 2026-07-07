@@ -217,7 +217,9 @@ nav.scrolled{box-shadow:0 10px 30px -18px rgba(16,20,26,.14)}
 .lstep.on .lnode{background:var(--lime-chip);border-color:rgba(121,201,0,.55);color:var(--lime);box-shadow:0 0 22px -4px rgba(121,201,0,.4);transform:scale(1.08)}
 .lstep .llbl{font-size:9.5px;color:var(--ink-3);letter-spacing:.03em;text-transform:uppercase;font-weight:600;white-space:nowrap}
 .lstep.on .llbl{color:var(--ink)}
-.llink{height:1px;flex:0 0 14px;background:var(--line-2);margin-bottom:20px}
+.llink{height:2px;flex:0 0 14px;background:var(--line-2);margin-bottom:20px;position:relative;overflow:hidden;border-radius:2px}
+.llink::after{content:"";position:absolute;inset:0;background:var(--lime);transform:scaleX(0);transform-origin:left;transition:transform .55s var(--ease);border-radius:2px;box-shadow:0 0 8px 0 rgba(121,201,0,.6)}
+.llink.filled::after{transform:scaleX(1)}
 .hloop-note{position:absolute;bottom:16px;left:0;right:0;text-align:center;font-size:10.5px;color:var(--ink-3);padding:0 20px}
 .hloop-note b{color:var(--emerald);font-weight:600}
 
@@ -481,11 +483,13 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--lime-tx);outline-of
 
 /* --- N. Loop agéntico: vertical en mobile (pasos apilados) --- */
 @media(max-width:760px){
-  .bcard.w3 .b-art{height:auto !important;min-height:0}
+  .loop-card .b-art{height:auto !important;min-height:0}
   .loop{position:static;flex-direction:column;align-items:stretch;gap:0;padding:24px 22px 8px}
   .lstep{flex-direction:row;gap:14px;align-items:center;padding:8px 0;flex:none}
   .lstep .llbl{font-size:12.5px;letter-spacing:.05em;white-space:normal}
-  .llink{width:1px;height:18px;flex:0 0 18px;margin:0 0 0 19px;background:var(--line-2)}
+  .llink{width:2px;height:18px;flex:0 0 18px;margin:0 0 0 19px;background:var(--line-2)}
+  .llink::after{transform-origin:top;transform:scaleY(0)}
+  .llink.filled::after{transform:scaleY(1)}
   .hloop-note{position:static;text-align:left;padding:14px 22px 18px;font-size:12px}
   /* espaciados mobile más justos */
   .sec{padding:52px 20px}
@@ -779,7 +783,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--lime-tx);outline-of
     </div>
     <div class="bento stg">
 
-      <div class="bcard w2">
+      <div class="bcard w3">
         <div class="b-art">
           <canvas class="wv" data-waves='{"c1":"#79C900","c2":"#12A46B","n":6,"amp":10,"gap":8,"y0":0.2,"y1":0.4,"thin":true,"op":0.2}'></canvas>
           <div class="wfall">
@@ -797,8 +801,8 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--lime-tx);outline-of
         </div>
       </div>
 
-      <div class="bcard">
-        <div class="b-art chart-art">
+      <div class="bcard w3">
+        <div class="b-art chart-art" style="height:260px">
           <svg class="pchart" viewBox="0 0 320 210" preserveAspectRatio="none" aria-hidden="true">
             <g stroke="rgba(16,20,26,.07)" stroke-width="1">
               <line x1="0" y1="52" x2="320" y2="52"/><line x1="0" y1="96" x2="320" y2="96"/>
@@ -820,7 +824,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--lime-tx);outline-of
         </div>
       </div>
 
-      <div class="bcard w3">
+      <div class="bcard w3 loop-card">
         <div class="b-art" style="height:210px">
           <canvas class="wv" data-waves='{"c1":"#79C900","c2":"#12A46B","n":8,"amp":8,"gap":7,"y0":0.85,"y1":0.75,"thin":true,"op":0.18}'></canvas>
           <div class="loop" id="loop">
@@ -1211,8 +1215,16 @@ document.querySelectorAll('.wfall').forEach(w=>{ w.querySelectorAll('.bar').forE
 /* loop stepper */
 if(!RM){
   const steps=[...document.querySelectorAll('#loop .lstep')];
+  const links=[...document.querySelectorAll('#loop .llink')];
+  const setFill = idx => links.forEach((l,i)=> l.classList.toggle('filled', i<idx));
   let si=0;
-  setInterval(()=>{ steps[si].classList.remove('on'); si=(si+1)%steps.length; steps[si].classList.add('on'); }, 1400);
+  setInterval(()=>{
+    steps[si].classList.remove('on');
+    if(si===steps.length-1){ si=0; links.forEach(l=>l.classList.remove('filled')); }
+    else si++;
+    steps[si].classList.add('on');
+    setFill(si);
+  }, 1400);
 }
 
 /* ===== ask-anything typing loop ===== */
