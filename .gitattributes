@@ -1,0 +1,7 @@
+# Files tracked in the repo but not published to the webroot.
+# `git archive` (used by deploy.sh) omits anything marked export-ignore.
+DEPLOY.md      export-ignore
+deploy.sh      export-ignore
+.gitignore     export-ignore
+.gitattributes export-ignore
+.nojekyll      export-ignore
