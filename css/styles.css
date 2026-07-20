@@ -328,13 +328,24 @@ footer{position:relative;background:var(--bg)}
 .fa-in{padding:0 6px 24px;font-size:14.5px;color:var(--ink-2);line-height:1.65;max-width:680px}
 
 
-/* ===== phone: chat claro (crema) dentro del marco oscuro ===== */
+/* ===== phone: fondo claro, burbujas oscuras (opción A) ===== */
 .phone{--ink:#141A17;--ink-2:#5A625C;--ink-3:#8A928C;--line:rgba(16,20,26,.09);--line-2:rgba(16,20,26,.14);--panel:#FFFFFF;--panel-2:#F1F3EE;--lime:#5FA300;--lime-chip:rgba(121,201,0,.16);--emerald:#12A46B;--amber:#C77E00;--red:#E5484D}
+/* header y status: sobre fondo claro, texto oscuro */
 .phone .chat-name{color:#141A17}
-.phone .msg.in{background:#FFFFFF;border-color:rgba(16,20,26,.08);color:#141A17}
-.phone .pl-row .k,.phone .alert-line .k{color:#5A625C}
-.phone .chat-input{background:#FFFFFF;border-color:rgba(16,20,26,.10);color:#8A928C}
-.phone .dc-hr,.phone .pl-row{border-color:rgba(16,20,26,.08)}
+.phone .chat-status{color:#0E8F5C}
+/* burbujas oscuras flotando sobre el fondo claro */
+.phone .msg.in{background:#131A29;border-color:rgba(237,241,247,.09);color:#EDF1F7}
+.phone .msg.in .pl-row .k,.phone .msg.in .alert-line .k{color:#9BA6B4}
+.phone .msg.in .pl-row,.phone .msg.in .alert-line,.phone .msg.in .dc-hr{border-color:rgba(237,241,247,.10)}
+.phone .msg.in .pl-row.total .k{color:#EDF1F7}
+.phone .msg.in .pl-row.total .v{color:#C8FA32}
+.phone .msg.in .v.down{color:#FF6B5E}
+.phone .msg.in .v.up{color:#3ADD9A}
+.phone .msg.in .v.hot{color:#C8FA32}
+.phone .msg.in .dc-name,.phone .msg.in strong,.phone .msg.in b{color:#EDF1F7}
+.phone .msg.in .success-check{color:#08130D}
+/* input: caja oscura flotando también */
+.phone .chat-input{background:#131A29;border-color:rgba(237,241,247,.10);color:#8894A4}
 
 /* reveal */
 .rv{opacity:0;transform:translateY(16px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
@@ -400,8 +411,7 @@ html,body{overflow-x:clip;max-width:100%}
 .case-brand{color:var(--lime-tx-strong)}
 .hloop-note b{color:var(--emerald-tx)}
 .st .rd,.f-grid a:hover,.fq:hover{color:var(--lime-tx)}
-.pl-row.total .v{color:#4E8A00}   /* inside light phone: readable lime */
-.chat-status{color:#12A46B}
+.chat-status{color:#0E8F5C}
 .hero-note{color:var(--ink-3)}
 .t .stars{color:#F5A623}
 .lstep.on .lnode{color:var(--lime-tx-strong)}
