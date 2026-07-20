@@ -74,20 +74,20 @@ nav.scrolled{box-shadow:0 10px 30px -18px rgba(16,20,26,.14)}
 .phone-wrap{position:relative;justify-self:end}
 .phone{width:332px;border-radius:46px;border:1px solid var(--line-2);background:#0B1220;box-shadow:0 40px 90px -34px rgba(16,20,26,.28),0 0 0 8px #E8EAE6,0 0 0 9px rgba(16,20,26,.06);overflow:hidden;position:relative}
 .notch{position:absolute;top:10px;left:50%;transform:translateX(-50%);width:110px;height:26px;border-radius:16px;background:#060A12;z-index:5}
-.chat-head{display:flex;align-items:center;gap:10px;padding:48px 16px 12px;border-bottom:1px solid var(--line);background:#0D1524}
-.chat-av{width:34px;height:34px;border-radius:50%;background:#0D1524;border:1px solid rgba(121,201,0,.4);display:flex;align-items:center;justify-content:center}
+.chat-head{display:flex;align-items:center;gap:10px;padding:48px 16px 12px;border-bottom:1px solid var(--line);background:#FFFFFF}
+.chat-av{width:34px;height:34px;border-radius:50%;background:#F1F3EE;border:1px solid rgba(121,201,0,.5);display:flex;align-items:center;justify-content:center}
 .chat-name{font-size:14px;font-weight:600;display:flex;align-items:center;gap:5px}
 .chat-name svg{color:var(--emerald)}
 .chat-status{font-size:11px;color:var(--emerald)}
-.chat-body{padding:14px 12px 16px;display:flex;flex-direction:column;gap:10px;height:428px;overflow-y:auto;scroll-behavior:smooth;background:radial-gradient(140% 100% at 100% 0%,rgba(121,201,0,.03),transparent 50%),#0B1220}
+.chat-body{padding:14px 12px 16px;display:flex;flex-direction:column;gap:10px;height:428px;overflow-y:auto;scroll-behavior:smooth;background:radial-gradient(140% 100% at 100% 0%,rgba(121,201,0,.05),transparent 50%),#F6F7F4}
 .chat-body::-webkit-scrollbar{width:4px}
 .chat-body::-webkit-scrollbar-track{background:transparent}
 .chat-body::-webkit-scrollbar-thumb{background:rgba(237,241,247,.12);border-radius:99px}
-.chat-body{scrollbar-width:thin;scrollbar-color:rgba(237,241,247,.14) transparent}
+.chat-body{scrollbar-width:thin;scrollbar-color:rgba(16,20,26,.16) transparent}
 .msg{max-width:88%;border-radius:12px;padding:11px 12px;font-size:12.5px;line-height:1.5;opacity:0;transform:translateY(10px) scale(.98);transition:opacity .4s var(--ease),transform .4s var(--ease)}
 .msg.show{opacity:1;transform:none}
 .msg.in{background:var(--panel-2);border:1px solid var(--line);align-self:flex-start;border-top-left-radius:4px}
-.msg.out{background:#1E2B1E;border:1px solid rgba(58,221,154,.25);align-self:flex-end;border-top-right-radius:4px;color:#D9E8DC}
+.msg.out{background:#E8F5DE;border:1px solid rgba(18,164,107,.28);align-self:flex-end;border-top-right-radius:4px;color:#1B3D2A}
 .msg .tt{font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--lime);margin-bottom:6px;display:flex;align-items:center;gap:6px}
 .msg .tt.warn{color:var(--amber)}
 .ti{width:13px;height:13px;flex-shrink:0}
@@ -328,13 +328,13 @@ footer{position:relative;background:var(--bg)}
 .fa-in{padding:0 6px 24px;font-size:14.5px;color:var(--ink-2);line-height:1.65;max-width:680px}
 
 
-/* ===== phone stays dark on the light theme (premium device look) ===== */
-.phone{--ink:#EDF1F7;--ink-2:#98A2B0;--ink-3:#5D6775;--line:rgba(237,241,247,.08);--line-2:rgba(237,241,247,.13);--panel:#111826;--panel-2:#141C2C;--lime:#C8FA32;--lime-chip:rgba(200,250,50,.12);--emerald:#3ADD9A;--amber:#FFB547;--red:#FF6B5E}
-.phone .chat-name{color:#EDF1F7}
-.phone .msg.in{background:#141C2C;border-color:rgba(237,241,247,.08);color:#EDF1F7}
-.phone .pl-row .k,.phone .alert-line .k{color:#98A2B0}
-.phone .chat-input{background:#111826;border-color:rgba(237,241,247,.08);color:#5D6775}
-.phone .dc-hr,.phone .pl-row{border-color:rgba(237,241,247,.08)}
+/* ===== phone: chat claro (crema) dentro del marco oscuro ===== */
+.phone{--ink:#141A17;--ink-2:#5A625C;--ink-3:#8A928C;--line:rgba(16,20,26,.09);--line-2:rgba(16,20,26,.14);--panel:#FFFFFF;--panel-2:#F1F3EE;--lime:#5FA300;--lime-chip:rgba(121,201,0,.16);--emerald:#12A46B;--amber:#C77E00;--red:#E5484D}
+.phone .chat-name{color:#141A17}
+.phone .msg.in{background:#FFFFFF;border-color:rgba(16,20,26,.08);color:#141A17}
+.phone .pl-row .k,.phone .alert-line .k{color:#5A625C}
+.phone .chat-input{background:#FFFFFF;border-color:rgba(16,20,26,.10);color:#8A928C}
+.phone .dc-hr,.phone .pl-row{border-color:rgba(16,20,26,.08)}
 
 /* reveal */
 .rv{opacity:0;transform:translateY(16px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
@@ -400,8 +400,8 @@ html,body{overflow-x:clip;max-width:100%}
 .case-brand{color:var(--lime-tx-strong)}
 .hloop-note b{color:var(--emerald-tx)}
 .st .rd,.f-grid a:hover,.fq:hover{color:var(--lime-tx)}
-.pl-row.total .v{color:#C8FA32}   /* inside dark phone: keep bright */
-.chat-status{color:#3ADD9A}
+.pl-row.total .v{color:#4E8A00}   /* inside light phone: readable lime */
+.chat-status{color:#12A46B}
 .hero-note{color:var(--ink-3)}
 .t .stars{color:#F5A623}
 .lstep.on .lnode{color:var(--lime-tx-strong)}
@@ -469,7 +469,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--lime-tx);outline-of
 /* --- J. Phone: dynamic island + status bar --- */
 .island{position:absolute;top:12px;left:50%;transform:translateX(-50%);width:92px;height:24px;border-radius:14px;background:#05080F;z-index:6;display:flex;align-items:center;justify-content:flex-end;padding-right:9px}
 .island .cam{width:8px;height:8px;border-radius:50%;background:#101B2E;box-shadow:inset 0 0 2px 1px #060B14}
-.statusbar{position:absolute;top:14px;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:0 24px;z-index:5;color:#EDF1F7}
+.statusbar{position:absolute;top:14px;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:0 24px;z-index:5;color:#141A17}
 .sb-time{font-size:12px;font-weight:600;font-family:var(--sans);letter-spacing:.02em}
 .sb-icons{display:flex;gap:5px;align-items:center}
 .chat-head{padding-top:52px}
