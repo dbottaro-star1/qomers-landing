@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://qomers.com/sitemap.xml

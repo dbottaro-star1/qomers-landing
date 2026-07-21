@@ -1,0 +1,71 @@
+{
+  "site": {
+    "base_url": "https://qomers.com",
+    "brand": "Qomers",
+    "blog_title": "Blog de Qomers",
+    "blog_description": "Guías, casos reales y estrategias para vender más y con mejor margen en tu e-commerce. Mercado Libre, Shopify, WooCommerce y Tiendanube.",
+    "author": "Equipo Qomers",
+    "wa": "https://wa.me/59899677738?text=Hola%20Qomers%2C%20quiero%20conectar%20mi%20tienda%20y%20probar%20la%20herramienta."
+  },
+  "articles": [
+    {
+      "slug": "como-martina-recupero-su-margen-y-el-buy-box",
+      "title": "Cómo Martina recuperó su margen y ganó de vuelta el Buy Box en dos horas",
+      "seo_title": "Cómo recuperar el Buy Box en Mercado Libre sin perder margen | Qomers",
+      "description": "Una competidora bajó el precio y Martina perdió el Buy Box. En vez de entrar en una guerra de precios a ciegas, usó su P&L real para responder en dos horas. Este es el caso completo.",
+      "keywords": "recuperar buy box mercado libre, guerra de precios mercado libre, margen real ecommerce, buy box perdido",
+      "category": "Caso real",
+      "tag": "Tienda Martina · Hogar y Deco",
+      "date": "2026-07-14",
+      "date_iso": "2026-07-14T09:00:00-03:00",
+      "date_display": "14 de julio, 2026",
+      "read_minutes": 6,
+      "hero_stat_1": "18%",
+      "hero_stat_1_label": "de margen recuperado",
+      "hero_stat_2": "2h",
+      "hero_stat_2_label": "para volver al puesto #1",
+      "featured": true,
+      "body": [
+        {"type": "lead", "text": "Un martes a la mañana, Martina abrió Mercado Libre y su publicación estrella de un juego de sábanas premium había caído del primer puesto. Un competidor —TecnoHogar— había bajado el precio un 8%. La reacción instintiva de cualquier vendedor es clara: igualar el precio y listo. Pero esa reacción, sin datos, es exactamente la que destruye los márgenes en el e-commerce."},
+
+        {"type": "h2", "text": "El problema no era el precio. Era no saber el margen."},
+        {"type": "p", "text": "Martina vende artículos de hogar y decoración hace tres años. Como la mayoría de los comerciantes, sabía cuánto facturaba, pero no cuánto ganaba realmente en cada venta. Entre la comisión de Mercado Libre, el costo de envío, los impuestos y el costo de la mercadería, el {{margen real}} de cada publicación era una incógnita que vivía —en el mejor de los casos— en una planilla desactualizada.",
+          "links": {"margen real": {"url": "../../index.html#valor"}}},
+        {"type": "p", "text": "Cuando perdió el Buy Box, la pregunta urgente no era \"¿a cuánto está la competencia?\". Esa la respondía sola mirando la publicación. La pregunta que de verdad importaba era: \"si igualo ese precio, ¿sigo ganando plata o estoy vendiendo a pérdida?\". Y esa no la podía responder rápido."},
+
+        {"type": "h2", "text": "La respuesta en dos horas, no en dos días"},
+        {"type": "p", "text": "Con Qomers conectado a su cuenta, Martina hizo una sola pregunta por WhatsApp: si igualaba el precio del competidor, qué pasaba con su margen. La respuesta no fue una opinión, fue su P&L real calculado sobre esa publicación específica:"},
+        {"type": "pl", "rows": [
+          {"k": "Venta bruta (nuevo precio)", "v": "$ 41.900", "kind": "neutral"},
+          {"k": "Comisión ML + envío", "v": "− $ 8.170", "kind": "down"},
+          {"k": "Impuestos", "v": "− $ 3.960", "kind": "down"},
+          {"k": "Costo de mercadería", "v": "− $ 21.400", "kind": "down"},
+          {"k": "Margen neto real", "v": "$ 8.370 · 20,0%", "kind": "total"}
+        ]},
+        {"type": "p", "text": "El dato clave: incluso igualando el precio, la publicación seguía dejando un 20% de margen neto. No era una venta a pérdida. Era una venta rentable que valía la pena defender. Con esa certeza —y no con una corazonada— Martina aprobó el cambio de precio desde el mismo chat."},
+
+        {"type": "h2", "text": "Por qué volvió al puesto #1 tan rápido"},
+        {"type": "p", "text": "El {{Buy Box de Mercado Libre}} no depende solo del precio: pesa el historial de ventas, la reputación, el tiempo de despacho y la disponibilidad de stock. Martina ya tenía buena reputación y stock, así que apenas igualó el precio con una publicación históricamente fuerte, el algoritmo la devolvió al primer lugar en cuestión de horas. La herramienta no \"hackeó\" nada: simplemente le dio la confianza para actuar rápido sabiendo que no se comía el margen.",
+          "links": {"Buy Box de Mercado Libre": {"url": "https://vendedores.mercadolibre.com.ar/nota/que-es-el-buy-box-y-como-funciona/", "external": true}}},
+
+        {"type": "callout", "text": "La diferencia no fue bajar el precio más rápido que la competencia. Fue saber, antes de tocar nada, que ese precio seguía siendo rentable."},
+
+        {"type": "h2", "text": "Qué podés aprender de este caso"},
+        {"type": "ul", "items": [
+          "El precio de la competencia es información pública. Tu margen real es tu ventaja: si no lo conocés al instante, siempre vas a reaccionar tarde o a ciegas.",
+          "Igualar un precio no es malo por sí mismo. Igualarlo sin saber si seguís ganando, sí.",
+          "En el Buy Box, la velocidad de reacción importa. Pero la velocidad sin datos es apuesta, no estrategia.",
+          "El costo de mercadería, comisiones e impuestos tienen que estar en un solo lugar y actualizados. Si viven en planillas separadas, la decisión llega tarde."
+        ]},
+
+        {"type": "h2", "text": "Cómo replicarlo en tu tienda"},
+        {"type": "p", "text": "Qomers {{conecta tu tienda}} de Mercado Libre (y de Shopify, WooCommerce o Tiendanube) y calcula el P&L real de cada publicación automáticamente: descuenta comisiones, envíos, impuestos y costo de mercadería. Cuando un competidor mueve el precio, te avisa y te muestra el impacto en tu margen antes de que decidas. Todo por WhatsApp, sin dashboards ni planillas. Podés ver {{todos los planes}} o {{empezar tu prueba gratis}} cuando quieras.",
+          "links": {
+            "conecta tu tienda": {"url": "../../index.html#integraciones"},
+            "todos los planes": {"url": "../../index.html#precios"},
+            "empezar tu prueba gratis": {"url": "https://wa.me/59899677738?text=Hola%20Qomers%2C%20quiero%20empezar%20mi%20prueba%20gratis%20de%2014%20d%C3%ADas.", "external": true}
+          }}
+      ]
+    }
+  ]
+}
