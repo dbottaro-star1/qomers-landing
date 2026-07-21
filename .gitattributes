@@ -8,3 +8,6 @@ deploy.sh      export-ignore
 # Blog build tooling — the site serves the pre-generated HTML, not these.
 blog/build_blog.py export-ignore
 blog/articles.json export-ignore
+
+# Infra reference (versioned nginx config) — must never be served from the webroot.
+infra/ export-ignore

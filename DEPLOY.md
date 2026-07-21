@@ -60,3 +60,31 @@ Note that a 404-looking path returns 200 with the `index.html` body — that is 
 or content to tell a real file from the fallback.
 
 TLS is Let's Encrypt via certbot, renewing automatically.
+
+## Nginx config
+
+`infra/nginx-qomers.com.conf` is the versioned reference of the production nginx
+server block for `qomers.com` / `www.qomers.com`. The live config lives at
+`/etc/nginx/sites-available/qomers.com` on the VPS (symlinked from
+`sites-enabled/`); this file is a copy so the config does not depend solely on the
+box or its backups.
+
+It includes the `location = /site.webmanifest` block with a scoped `types` map that
+serves the manifest as `application/manifest+json` instead of the default
+`application/octet-stream`. The `types` block is scoped to that one location on
+purpose — a bare `types` block at server level would replace the inherited
+`mime.types` and break every other file's Content-Type.
+
+`infra/` is marked `export-ignore`, so `git archive` never ships it to the webroot.
+It is a reference only — editing it does not change production.
+
+To re-apply on a fresh server (adjust cert paths if certbot has not run yet):
+
+```sh
+sudo cp infra/nginx-qomers.com.conf /etc/nginx/sites-available/qomers.com
+sudo ln -sf /etc/nginx/sites-available/qomers.com /etc/nginx/sites-enabled/qomers.com
+sudo nginx -t && sudo systemctl reload nginx
+```
+
+Keep this file in sync by hand after any change to the live nginx config —
+nothing automates the copy.
