@@ -10,10 +10,10 @@
   "articles": [
     {
       "slug": "como-martina-recupero-su-margen-y-el-buy-box",
-      "title": "Cómo Martina recuperó su margen y ganó de vuelta el Buy Box en dos horas",
-      "seo_title": "Cómo recuperar el Buy Box en Mercado Libre sin perder margen | Qomers",
-      "description": "Una competidora bajó el precio y Martina perdió el Buy Box. En vez de entrar en una guerra de precios a ciegas, usó su P&L real para responder en dos horas. Este es el caso completo.",
-      "keywords": "recuperar buy box mercado libre, guerra de precios mercado libre, margen real ecommerce, buy box perdido",
+      "title": "Cómo Martina recuperó su margen y volvió al primer puesto en dos horas",
+      "seo_title": "Cómo volver al primer puesto en Mercado Libre sin perder margen | Qomers",
+      "description": "Una competidora bajó el precio y Martina perdió la posición destacada de su publicación. En vez de entrar en una guerra de precios a ciegas, usó su P&L real para responder en dos horas. Este es el caso completo.",
+      "keywords": "posición destacada mercado libre, guerra de precios mercado libre, margen real ecommerce, recuperar primer puesto mercado libre",
       "category": "Caso real",
       "tag": "Tienda Martina · Hogar y Deco",
       "date": "2026-07-14",
@@ -26,45 +26,503 @@
       "hero_stat_2_label": "para volver al puesto #1",
       "featured": true,
       "body": [
-        {"type": "lead", "text": "Un martes a la mañana, Martina abrió Mercado Libre y su publicación estrella de un juego de sábanas premium había caído del primer puesto. Un competidor —TecnoHogar— había bajado el precio un 8%. La reacción instintiva de cualquier vendedor es clara: igualar el precio y listo. Pero esa reacción, sin datos, es exactamente la que destruye los márgenes en el e-commerce."},
-
-        {"type": "h2", "text": "El problema no era el precio. Era no saber el margen."},
-        {"type": "p", "text": "Martina vende artículos de hogar y decoración hace tres años. Como la mayoría de los comerciantes, sabía cuánto facturaba, pero no cuánto ganaba realmente en cada venta. Entre la comisión de Mercado Libre, el costo de envío, los impuestos y el costo de la mercadería, el {{margen real}} de cada publicación era una incógnita que vivía —en el mejor de los casos— en una planilla desactualizada.",
-          "links": {"margen real": {"url": "../../index.html#valor"}}},
-        {"type": "p", "text": "Cuando perdió el Buy Box, la pregunta urgente no era \"¿a cuánto está la competencia?\". Esa la respondía sola mirando la publicación. La pregunta que de verdad importaba era: \"si igualo ese precio, ¿sigo ganando plata o estoy vendiendo a pérdida?\". Y esa no la podía responder rápido."},
-
-        {"type": "h2", "text": "La respuesta en dos horas, no en dos días"},
-        {"type": "p", "text": "Con Qomers conectado a su cuenta, Martina hizo una sola pregunta por WhatsApp: si igualaba el precio del competidor, qué pasaba con su margen. La respuesta no fue una opinión, fue su P&L real calculado sobre esa publicación específica:"},
-        {"type": "pl", "rows": [
-          {"k": "Venta bruta (nuevo precio)", "v": "$ 41.900", "kind": "neutral"},
-          {"k": "Comisión ML + envío", "v": "− $ 8.170", "kind": "down"},
-          {"k": "Impuestos", "v": "− $ 3.960", "kind": "down"},
-          {"k": "Costo de mercadería", "v": "− $ 21.400", "kind": "down"},
-          {"k": "Margen neto real", "v": "$ 8.370 · 20,0%", "kind": "total"}
-        ]},
-        {"type": "p", "text": "El dato clave: incluso igualando el precio, la publicación seguía dejando un 20% de margen neto. No era una venta a pérdida. Era una venta rentable que valía la pena defender. Con esa certeza —y no con una corazonada— Martina aprobó el cambio de precio desde el mismo chat."},
-
-        {"type": "h2", "text": "Por qué volvió al puesto #1 tan rápido"},
-        {"type": "p", "text": "El {{Buy Box de Mercado Libre}} no depende solo del precio: pesa el historial de ventas, la reputación, el tiempo de despacho y la disponibilidad de stock. Martina ya tenía buena reputación y stock, así que apenas igualó el precio con una publicación históricamente fuerte, el algoritmo la devolvió al primer lugar en cuestión de horas. La herramienta no \"hackeó\" nada: simplemente le dio la confianza para actuar rápido sabiendo que no se comía el margen.",
-          "links": {"Buy Box de Mercado Libre": {"url": "https://vendedores.mercadolibre.com.ar/nota/que-es-el-buy-box-y-como-funciona/", "external": true}}},
-
-        {"type": "callout", "text": "La diferencia no fue bajar el precio más rápido que la competencia. Fue saber, antes de tocar nada, que ese precio seguía siendo rentable."},
-
-        {"type": "h2", "text": "Qué podés aprender de este caso"},
-        {"type": "ul", "items": [
-          "El precio de la competencia es información pública. Tu margen real es tu ventaja: si no lo conocés al instante, siempre vas a reaccionar tarde o a ciegas.",
-          "Igualar un precio no es malo por sí mismo. Igualarlo sin saber si seguís ganando, sí.",
-          "En el Buy Box, la velocidad de reacción importa. Pero la velocidad sin datos es apuesta, no estrategia.",
-          "El costo de mercadería, comisiones e impuestos tienen que estar en un solo lugar y actualizados. Si viven en planillas separadas, la decisión llega tarde."
-        ]},
-
-        {"type": "h2", "text": "Cómo replicarlo en tu tienda"},
-        {"type": "p", "text": "Qomers {{conecta tu tienda}} de Mercado Libre (y de Shopify, WooCommerce o Tiendanube) y calcula el P&L real de cada publicación automáticamente: descuenta comisiones, envíos, impuestos y costo de mercadería. Cuando un competidor mueve el precio, te avisa y te muestra el impacto en tu margen antes de que decidas. Todo por WhatsApp, sin dashboards ni planillas. Podés ver {{todos los planes}} o {{empezar tu prueba gratis}} cuando quieras.",
+        {
+          "type": "lead",
+          "text": "Un martes a la mañana, Martina abrió Mercado Libre y su publicación estrella de un juego de sábanas premium había caído del primer puesto. Un competidor —TecnoHogar— había bajado el precio un 8%. La reacción instintiva de cualquier vendedor es clara: igualar el precio y listo. Pero esa reacción, sin datos, es exactamente la que destruye los márgenes en el e-commerce."
+        },
+        {
+          "type": "h2",
+          "text": "El problema no era el precio. Era no saber el margen."
+        },
+        {
+          "type": "p",
+          "text": "Martina vende artículos de hogar y decoración hace tres años. Como la mayoría de los comerciantes, sabía cuánto facturaba, pero no cuánto ganaba realmente en cada venta. Entre la comisión de Mercado Libre, el costo de envío, los impuestos y el costo de la mercadería, el {{margen real}} de cada publicación era una incógnita que vivía —en el mejor de los casos— en una planilla desactualizada.",
           "links": {
-            "conecta tu tienda": {"url": "../../index.html#integraciones"},
-            "todos los planes": {"url": "../../index.html#precios"},
-            "empezar tu prueba gratis": {"url": "https://wa.me/59899677738?text=Hola%20Qomers%2C%20quiero%20empezar%20mi%20prueba%20gratis%20de%2014%20d%C3%ADas.", "external": true}
-          }}
+            "margen real": {
+              "url": "../../index.html#valor"
+            }
+          }
+        },
+        {
+          "type": "p",
+          "text": "Cuando perdió la posición destacada, la pregunta urgente no era \"¿a cuánto está la competencia?\". Esa la respondía sola mirando la publicación. La pregunta que de verdad importaba era: \"si igualo ese precio, ¿sigo ganando plata o estoy vendiendo a pérdida?\". Y esa no la podía responder rápido."
+        },
+        {
+          "type": "h2",
+          "text": "La respuesta en dos horas, no en dos días"
+        },
+        {
+          "type": "p",
+          "text": "Con Qomers conectado a su cuenta, Martina hizo una sola pregunta por WhatsApp: si igualaba el precio del competidor, qué pasaba con su margen. La respuesta no fue una opinión, fue su P&L real calculado sobre esa publicación específica:"
+        },
+        {
+          "type": "pl",
+          "rows": [
+            {
+              "k": "Venta bruta (nuevo precio)",
+              "v": "$ 41.900",
+              "kind": "neutral"
+            },
+            {
+              "k": "Comisión ML + envío",
+              "v": "− $ 8.170",
+              "kind": "down"
+            },
+            {
+              "k": "Impuestos",
+              "v": "− $ 3.960",
+              "kind": "down"
+            },
+            {
+              "k": "Costo de mercadería",
+              "v": "− $ 21.400",
+              "kind": "down"
+            },
+            {
+              "k": "Margen neto real",
+              "v": "$ 8.370 · 20,0%",
+              "kind": "total"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "El dato clave: incluso igualando el precio, la publicación seguía dejando un 20% de margen neto. No era una venta a pérdida. Era una venta rentable que valía la pena defender. Con esa certeza —y no con una corazonada— Martina aprobó el cambio de precio desde el mismo chat."
+        },
+        {
+          "type": "h2",
+          "text": "Por qué volvió al puesto #1 tan rápido"
+        },
+        {
+          "type": "p",
+          "text": "La {{posición destacada en Mercado Libre}} no depende solo del precio: pesa el historial de ventas, la reputación, el tiempo de despacho y la disponibilidad de stock. Martina ya tenía buena reputación y stock, así que apenas igualó el precio con una publicación históricamente fuerte, el algoritmo la devolvió al primer lugar en cuestión de horas. La herramienta no \"hackeó\" nada: simplemente le dio la confianza para actuar rápido sabiendo que no se comía el margen.",
+          "links": {
+            "posición destacada en Mercado Libre": {
+              "url": "https://vendedores.mercadolibre.com.ar/nota/que-es-el-buy-box-y-como-funciona/",
+              "external": true
+            }
+          }
+        },
+        {
+          "type": "callout",
+          "text": "La diferencia no fue bajar el precio más rápido que la competencia. Fue saber, antes de tocar nada, que ese precio seguía siendo rentable."
+        },
+        {
+          "type": "h2",
+          "text": "Qué podés aprender de este caso"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "El precio de la competencia es información pública. Tu margen real es tu ventaja: si no lo conocés al instante, siempre vas a reaccionar tarde o a ciegas.",
+            "Igualar un precio no es malo por sí mismo. Igualarlo sin saber si seguís ganando, sí.",
+            "Para la posición destacada, la velocidad de reacción importa. Pero la velocidad sin datos es apuesta, no estrategia.",
+            "El costo de mercadería, comisiones e impuestos tienen que estar en un solo lugar y actualizados. Si viven en planillas separadas, la decisión llega tarde."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Cómo replicarlo en tu tienda"
+        },
+        {
+          "type": "p",
+          "text": "Qomers {{conecta tu tienda}} de Mercado Libre (y de Shopify, WooCommerce o Tiendanube) y calcula el P&L real de cada publicación automáticamente: descuenta comisiones, envíos, impuestos y costo de mercadería. Cuando un competidor mueve el precio, te avisa y te muestra el impacto en tu margen antes de que decidas. Todo por WhatsApp, sin dashboards ni planillas. Podés ver {{todos los planes}} o {{empezar tu prueba gratis}} cuando quieras.",
+          "links": {
+            "conecta tu tienda": {
+              "url": "../../index.html#integraciones"
+            },
+            "todos los planes": {
+              "url": "../../index.html#precios"
+            },
+            "empezar tu prueba gratis": {
+              "url": "https://wa.me/59899677738?text=Hola%20Qomers%2C%20quiero%20empezar%20mi%20prueba%20gratis%20de%2014%20d%C3%ADas.",
+              "external": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "como-calcular-ganancia-real-mercado-libre",
+      "title": "Cuánto ganás de verdad en Mercado Libre: la cuenta que casi nadie hace bien",
+      "seo_title": "Cómo calcular tu ganancia real en Mercado Libre (guía 2026) | Qomers",
+      "description": "Facturás bien pero no sabés cuánto te queda. Esta guía te muestra cómo calcular la ganancia real de cada venta en Mercado Libre —comisiones, envío, impuestos y costo— sin planillas eternas.",
+      "keywords": "cómo calcular ganancia mercado libre, margen real mercado libre, ganancia neta ecommerce, cuánto gano en mercado libre, calcular rentabilidad publicación",
+      "category": "Guía",
+      "tag": "Márgenes y rentabilidad",
+      "date": "2026-07-21",
+      "date_iso": "2026-07-21T09:00:00-03:00",
+      "date_display": "21 de julio, 2026",
+      "read_minutes": 7,
+      "hero_stat_1": "70%",
+      "hero_stat_1_label": "de vendedores no sabe su margen neto real",
+      "hero_stat_2": "4",
+      "hero_stat_2_label": "costos que se comen tu ganancia",
+      "featured": false,
+      "body": [
+        {
+          "type": "lead",
+          "text": "Hay una pregunta que suena simple pero que la mayoría de los vendedores no puede responder al instante: de esta venta que acabo de hacer, ¿cuánto me queda a mí? No cuánto facturé. Cuánto gané. Y esa diferencia es la que separa a un negocio que crece de uno que trabaja para pagarle a la plataforma."
+        },
+        {
+          "type": "h2",
+          "text": "Facturar no es ganar (y confundirlos es caro)"
+        },
+        {
+          "type": "p",
+          "text": "El error más común en el e-commerce es mirar el número grande —la facturación— y sentir que el negocio va bien. Pero entre lo que te paga el cliente y lo que realmente entra a tu bolsillo hay una lista de descuentos que muchas veces vive en la cabeza del vendedor, dispersa y desactualizada. Cuando esa cuenta no está clara, terminás vendiendo productos que creés rentables y en realidad te hacen perder plata en cada unidad."
+        },
+        {
+          "type": "p",
+          "text": "La buena noticia: calcular tu {{ganancia real}} no es complicado. Es una resta. El problema es que son varias restas y hay que hacerlas sobre cada publicación, no sobre el negocio en general.",
+          "links": {
+            "ganancia real": {
+              "url": "../../index.html#valor"
+            }
+          }
+        },
+        {
+          "type": "h2",
+          "text": "Los 4 costos que tenés que restar sí o sí"
+        },
+        {
+          "type": "p",
+          "text": "Para saber cuánto ganás de verdad en una venta de Mercado Libre, partís del precio de venta y le restás estos cuatro bloques:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Comisión de Mercado Libre: un porcentaje sobre el precio que varía según la categoría y el tipo de publicación (clásica o premium). Es lo primero que se descuenta.",
+            "Costo de envío: si ofrecés envío gratis, ese costo lo absorbés vos, total o parcialmente. En productos de bajo precio, el envío puede ser el costo más grande de todos.",
+            "Impuestos: según tu situación fiscal y tu país, un porcentaje de cada venta se va en impuestos. Ignorarlo infla tu margen en un número que no es real.",
+            "Costo de la mercadería: lo que te costó a vos el producto. Parece obvio, pero es el dato que más seguido está desactualizado cuando cambian los precios de tus proveedores."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "La cuenta, con números reales"
+        },
+        {
+          "type": "p",
+          "text": "Veamos una venta concreta. Un producto que vendés a $ 41.900 con envío gratis:"
+        },
+        {
+          "type": "pl",
+          "rows": [
+            {
+              "k": "Precio de venta",
+              "v": "$ 41.900",
+              "kind": "neutral"
+            },
+            {
+              "k": "Comisión Mercado Libre + envío",
+              "v": "− $ 8.170",
+              "kind": "down"
+            },
+            {
+              "k": "Impuestos",
+              "v": "− $ 3.960",
+              "kind": "down"
+            },
+            {
+              "k": "Costo de la mercadería",
+              "v": "− $ 21.400",
+              "kind": "down"
+            },
+            {
+              "k": "Ganancia real",
+              "v": "$ 8.370 · 20,0%",
+              "kind": "total"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "De $ 41.900 que ves entrar, te quedan $ 8.370. Un 20% de margen neto. Ese es el número que importa para decidir si podés bajar el precio, hacer una promo o si conviene dejar de vender ese producto. Sin esa cuenta, cualquier decisión de precio es una apuesta."
+        },
+        {
+          "type": "callout",
+          "text": "No necesitás saber tu margen del negocio entero. Necesitás saber el margen de cada publicación. Ahí es donde se gana o se pierde la plata."
+        },
+        {
+          "type": "h2",
+          "text": "Un caso: Rodrigo y los seis productos que perdían plata"
+        },
+        {
+          "type": "p",
+          "text": "Rodrigo vende accesorios de tecnología. Facturaba bien y estaba contento, hasta que hizo la cuenta producto por producto. Descubrió que seis de sus publicaciones —todas de bajo precio con envío gratis— tenían margen negativo: cada venta le costaba plata. El envío gratis se comía todo. No lo sabía porque miraba la facturación total, que se veía sana gracias a los productos que sí funcionaban."
+        },
+        {
+          "type": "p",
+          "text": "La solución no fue dramática: ajustó el precio de esos seis productos, sacó el envío gratis en dos y pausó uno que no tenía arreglo. En un mes, el mismo volumen de ventas le dejaba bastante más plata. No vendió más. Ganó más de lo mismo."
+        },
+        {
+          "type": "h2",
+          "text": "Por qué las planillas no alcanzan"
+        },
+        {
+          "type": "p",
+          "text": "Podés hacer todo esto en una planilla, y mucha gente lo hace. El problema es mantenerla. Las comisiones cambian, los costos de tus proveedores cambian, agregás productos nuevos. Una planilla que armaste hace tres meses hoy te está mintiendo. Y actualizarla a mano cada semana es un trabajo que nadie sostiene."
+        },
+        {
+          "type": "p",
+          "text": "Por eso {{Qomers conecta tu tienda}} y calcula la ganancia real de cada publicación automáticamente: descuenta comisiones, envíos, impuestos y costo de mercadería, y te lo muestra por WhatsApp cuando lo necesitás. Sin planillas, sin dashboards. Si querés probarlo, {{arrancá tu prueba gratis}}.",
+          "links": {
+            "Qomers conecta tu tienda": {
+              "url": "../../index.html#integraciones"
+            },
+            "arrancá tu prueba gratis": {
+              "url": "https://wa.me/59899677738?text=Hola%20Qomers%2C%20quiero%20empezar%20mi%20prueba%20gratis%20de%2014%20d%C3%ADas.",
+              "external": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "cuanto-cobra-mercado-libre-comisiones",
+      "title": "Cuánto te cobra Mercado Libre por vender (y cómo dejar de perder plata sin darte cuenta)",
+      "seo_title": "Cuánto cobra Mercado Libre por venta: comisiones explicadas 2026 | Qomers",
+      "description": "Comisión, envío, impuestos: la suma de lo que te descuenta Mercado Libre en cada venta puede ser mayor de lo que creés. Te explicamos cada costo y cómo saber si tu precio sigue siendo rentable.",
+      "keywords": "cuánto cobra mercado libre, comisiones mercado libre, costo de vender en mercado libre, comisión mercado libre por venta, cuánto descuenta mercado libre",
+      "category": "Guía",
+      "tag": "Costos y comisiones",
+      "date": "2026-07-21",
+      "date_iso": "2026-07-21T11:00:00-03:00",
+      "date_display": "21 de julio, 2026",
+      "read_minutes": 6,
+      "hero_stat_1": "30%+",
+      "hero_stat_1_label": "de tu precio puede irse en costos de plataforma",
+      "hero_stat_2": "3",
+      "hero_stat_2_label": "descuentos que suman más de lo que parece",
+      "featured": false,
+      "body": [
+        {
+          "type": "lead",
+          "text": "Cuando vendés en Mercado Libre, el precio que ve el cliente y la plata que te llega a vos son dos números muy distintos. Entre uno y otro hay una serie de descuentos que, sumados, pueden llevarse un tercio o más de tu precio. Entender exactamente cuánto te cobra la plataforma es el primer paso para poner precios que te dejen ganancia real."
+        },
+        {
+          "type": "h2",
+          "text": "Los tres descuentos de cada venta"
+        },
+        {
+          "type": "p",
+          "text": "Mercado Libre no te cobra una sola cosa. Son varios costos que se acumulan, y por eso la cuenta engaña. Estos son los principales:"
+        },
+        {
+          "type": "h3",
+          "text": "1. La comisión por venta"
+        },
+        {
+          "type": "p",
+          "text": "Es un porcentaje sobre el precio, y depende de dos cosas: la categoría del producto y el tipo de publicación. Una publicación premium (la que aparece en cuotas sin interés) cobra más comisión que una clásica. La diferencia entre una y otra puede ser de varios puntos porcentuales sobre cada venta."
+        },
+        {
+          "type": "h3",
+          "text": "2. El costo de envío"
+        },
+        {
+          "type": "p",
+          "text": "Acá está la trampa más grande. Si ofrecés envío gratis para ganar el {{primer puesto}} en las búsquedas, ese costo lo pagás vos. Y en productos de precio bajo, el envío puede ser tan caro que se lleve toda tu ganancia. Muchos vendedores ofrecen envío gratis sin calcular cuánto les cuesta realmente por unidad.",
+          "links": {
+            "primer puesto": {
+              "url": "../../index.html#valor"
+            }
+          }
+        },
+        {
+          "type": "h3",
+          "text": "3. Los impuestos"
+        },
+        {
+          "type": "p",
+          "text": "Según tu condición fiscal y tu país, una parte de cada venta se va en impuestos. No es algo que cobre Mercado Libre, pero sí sale de la misma venta, así que tenés que restarlo para saber qué te queda de verdad."
+        },
+        {
+          "type": "h2",
+          "text": "La suma real, sobre un ejemplo"
+        },
+        {
+          "type": "p",
+          "text": "Tomemos un producto de $ 41.900 con envío gratis. Así se ve el descuento total:"
+        },
+        {
+          "type": "pl",
+          "rows": [
+            {
+              "k": "Precio de venta",
+              "v": "$ 41.900",
+              "kind": "neutral"
+            },
+            {
+              "k": "Comisión + costo de envío",
+              "v": "− $ 8.170",
+              "kind": "down"
+            },
+            {
+              "k": "Impuestos",
+              "v": "− $ 3.960",
+              "kind": "down"
+            },
+            {
+              "k": "Total descontado",
+              "v": "$ 12.130 · 29%",
+              "kind": "total"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Casi el 29% del precio se fue antes de contar cuánto te costó el producto. Si a esto le sumás el costo de la mercadería, entendés por qué tantos vendedores facturan mucho y ganan poco. El precio no es lo que ganás: es el punto de partida de una resta larga."
+        },
+        {
+          "type": "callout",
+          "text": "El envío gratis no es gratis. Es un costo tuyo que muchas veces vale más que la comisión de la plataforma."
+        },
+        {
+          "type": "h2",
+          "text": "Un caso: Carla y la promo que la hacía perder"
+        },
+        {
+          "type": "p",
+          "text": "Carla vende artículos de bazar. Para el Día de la Madre armó una promo agresiva con envío gratis en todo, convencida de que el volumen compensaría. Vendió muchísimo. Cuando llegó la liquidación, la ganancia era casi nula: el combo de comisión premium + envío gratis + impuestos le dejaba menos de $ 500 por venta en varios productos. Había trabajado un mes entero, embalado cientos de paquetes, para ganar casi lo mismo que sin la promo."
+        },
+        {
+          "type": "p",
+          "text": "El problema no fue hacer la promo. Fue no saber, antes de lanzarla, cuánto le quedaba de cada venta con esas condiciones. Con la cuenta clara, habría subido un poco el precio o limitado el envío gratis a los productos que lo aguantaban."
+        },
+        {
+          "type": "h2",
+          "text": "Cómo saber si tu precio te deja ganancia"
+        },
+        {
+          "type": "p",
+          "text": "La única forma de poner precios con confianza es conocer, para cada publicación, cuánto se lleva la plataforma y cuánto te queda a vos. {{Qomers}} hace esa cuenta automáticamente sobre tu catálogo: te muestra el descuento real de cada venta y tu ganancia neta, actualizado, por WhatsApp. Antes de tocar un precio o lanzar una promo, sabés exactamente qué pasa con tu bolsillo. {{Probalo gratis 14 días}}.",
+          "links": {
+            "Qomers": {
+              "url": "../../index.html#valor"
+            },
+            "Probalo gratis 14 días": {
+              "url": "https://wa.me/59899677738?text=Hola%20Qomers%2C%20quiero%20empezar%20mi%20prueba%20gratis%20de%2014%20d%C3%ADas.",
+              "external": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "monitorear-precios-competencia-mercado-libre",
+      "title": "Cómo dejar de perder ventas cada vez que un competidor baja el precio",
+      "seo_title": "Cómo monitorear precios de la competencia en Mercado Libre | Qomers",
+      "description": "Cuando un competidor baja el precio, tenés horas para reaccionar antes de perder ventas y posición. Esta guía te muestra cómo monitorear a tu competencia sin vivir pegado a la pantalla.",
+      "keywords": "monitorear precios competencia mercado libre, precios de la competencia ecommerce, guerra de precios mercado libre, no perder ventas por precio, vigilar competidores mercado libre",
+      "category": "Guía",
+      "tag": "Competencia y precios",
+      "date": "2026-07-21",
+      "date_iso": "2026-07-21T13:00:00-03:00",
+      "date_display": "21 de julio, 2026",
+      "read_minutes": 6,
+      "hero_stat_1": "24/7",
+      "hero_stat_1_label": "es cuando cambian los precios de tus rivales",
+      "hero_stat_2": "2h",
+      "hero_stat_2_label": "es la ventana para reaccionar sin perder posición",
+      "featured": false,
+      "body": [
+        {
+          "type": "lead",
+          "text": "Estás durmiendo, o almorzando, o con un cliente. Del otro lado, un competidor baja el precio de un producto que vos también vendés. Para cuando te enterás —si te enterás— ya perdiste posición en las búsquedas y con ella, ventas. El precio en el e-commerce se mueve a toda hora, y reaccionar tarde cuesta plata."
+        },
+        {
+          "type": "h2",
+          "text": "Por qué el precio de la competencia te afecta aunque no quieras entrar en la guerra"
+        },
+        {
+          "type": "p",
+          "text": "No hace falta que quieras competir por precio para que el precio de otros te afecte. En Mercado Libre, cuando varios venden el mismo producto, la {{posición destacada}} —el lugar que se lleva la mayoría de las ventas— depende en buena parte del precio. Si un competidor baja el suyo y vos no te enterás, simplemente empezás a vender menos sin saber por qué.",
+          "links": {
+            "posición destacada": {
+              "url": "../../index.html#valor"
+            }
+          }
+        },
+        {
+          "type": "p",
+          "text": "El problema no es que bajen los precios. El problema es enterarte tarde. La diferencia entre reaccionar en dos horas y reaccionar en dos días puede ser toda la venta de la semana en ese producto."
+        },
+        {
+          "type": "h2",
+          "text": "Las tres formas de monitorear (y por qué dos no funcionan)"
+        },
+        {
+          "type": "h3",
+          "text": "A mano: mirar las publicaciones de tus rivales"
+        },
+        {
+          "type": "p",
+          "text": "Es lo que hace casi todo el mundo al principio: abrir cada tanto las publicaciones de la competencia y anotar precios. Funciona si tenés dos productos. Con veinte, es imposible: no podés estar todo el día revisando, y justo cuando no mirás es cuando cambian el precio."
+        },
+        {
+          "type": "h3",
+          "text": "Alertas manuales: revisar a horario fijo"
+        },
+        {
+          "type": "p",
+          "text": "Algunos se arman una rutina: revisar a la mañana y a la noche. Mejor que nada, pero seguís teniendo ventanas ciegas de muchas horas. Y no escala: cuanto más crecés, más productos tenés que vigilar y menos tiempo para hacerlo."
+        },
+        {
+          "type": "h3",
+          "text": "Monitoreo automático: que algo lo haga por vos"
+        },
+        {
+          "type": "p",
+          "text": "La única forma que escala es que un sistema vigile los precios de tu competencia todo el tiempo y te avise cuando algo cambia. No para que reacciones a cada movimiento, sino para que te enteres de los que importan, en el momento en que pasan."
+        },
+        {
+          "type": "callout",
+          "text": "El objetivo no es reaccionar a cada cambio de precio. Es no enterarte tarde de los que te hacen perder ventas."
+        },
+        {
+          "type": "h2",
+          "text": "Reaccionar con datos, no por pánico"
+        },
+        {
+          "type": "p",
+          "text": "Enterarte a tiempo es la mitad. La otra mitad es saber qué hacer. Cuando un competidor baja el precio, la reacción instintiva es igualarlo. Pero igualar un precio a ciegas puede dejarte vendiendo a pérdida. Antes de mover un precio, necesitás saber si a ese nuevo valor seguís ganando. Enterarte rápido y saber tu {{margen real}} en el momento es lo que te deja responder con cabeza en vez de por miedo.",
+          "links": {
+            "margen real": {
+              "url": "../../index.html#valor"
+            }
+          }
+        },
+        {
+          "type": "h2",
+          "text": "Un caso: Martín y el domingo a la noche"
+        },
+        {
+          "type": "p",
+          "text": "Martín vende herramientas. Un domingo a las 11 de la noche, un competidor bajó el precio de su producto estrella. Martín se enteró el martes, cuando notó que las ventas de ese producto habían caído a la mitad. Dos días perdidos, y encima tuvo que apurarse a igualar sin saber bien si le convenía. Terminó bajando más de lo necesario."
+        },
+        {
+          "type": "p",
+          "text": "Después de eso, puso el producto bajo monitoreo automático. La siguiente vez que un rival movió el precio, recibió el aviso en minutos, con el impacto en su margen ya calculado. Ajustó el precio esa misma noche, desde el celular, sabiendo que seguía siendo rentable. No perdió ni un día de ventas."
+        },
+        {
+          "type": "h2",
+          "text": "Vigilar sin vivir pegado a la pantalla"
+        },
+        {
+          "type": "p",
+          "text": "Nadie puede —ni debería— pasar el día revisando las publicaciones de la competencia. {{Qomers vigila los precios}} de tus rivales las 24 horas y te avisa por WhatsApp cuando algo cambia, con el impacto en tu margen ya calculado, para que decidas con datos y en minutos. Sin dashboards, sin estar encima. {{Probá 14 días gratis}}.",
+          "links": {
+            "Qomers vigila los precios": {
+              "url": "../../index.html#integraciones"
+            },
+            "Probá 14 días gratis": {
+              "url": "https://wa.me/59899677738?text=Hola%20Qomers%2C%20quiero%20empezar%20mi%20prueba%20gratis%20de%2014%20d%C3%ADas.",
+              "external": true
+            }
+          }
+        }
       ]
     }
   ]
