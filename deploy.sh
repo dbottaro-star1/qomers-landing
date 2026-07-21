@@ -40,6 +40,16 @@ fi
 # reach the webroot.
 git archive "$REF" | tar -x -C "$STAGE"
 
+# Cache-busting: stamp the css/js references in index.html with the commit hash
+# so browsers always fetch the new files after a deploy (no stale cache). The
+# repo's index.html stays clean; only the deployed copy gets the ?v=<hash>.
+VER="$(git rev-parse --short "$REF")"
+if [ -f "$STAGE/index.html" ]; then
+  sed -i.bak -E "s|(href=\"css/styles\.css)\"|\1?v=$VER\"|; s|(src=\"js/main\.js)\"|\1?v=$VER\"|" "$STAGE/index.html"
+  rm -f "$STAGE/index.html.bak"
+  echo "cache-bust: stamped css/js with ?v=$VER"
+fi
+
 if [ "$APPLY" -eq 0 ]; then
   echo
   echo "--- DRY RUN (pass --apply to deploy) ---"
