@@ -4,4 +4,7 @@ DEPLOY.md      export-ignore
 deploy.sh      export-ignore
 .gitignore     export-ignore
 .gitattributes export-ignore
-.nojekyll      export-ignore
+
+# Blog build tooling — the site serves the pre-generated HTML, not these.
+blog/build_blog.py export-ignore
+blog/articles.json export-ignore
