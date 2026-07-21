@@ -143,27 +143,39 @@ const m1=document.getElementById('m1'), m2=document.getElementById('m2'),
       typ=document.getElementById('typ'), btn=document.getElementById('approveBtn'),
       marginOdo=document.getElementById('marginOdo');
 function chatScroll(){ if(chatBody) chatBody.scrollTo({top:chatBody.scrollHeight,behavior:'smooth'}); }
-function reveal(el){ el.classList.add('show'); chatScroll(); }
+function scrollMsgIntoView(el){
+  // deja el mensaje recién llegado abajo en la ventana (como un chat real), sin empujarlo fuera
+  if(!chatBody||!el) return;
+  const target = el.offsetTop + el.offsetHeight - chatBody.clientHeight + 16;
+  chatBody.scrollTo({top: Math.max(0, target), behavior:'smooth'});
+}
+function reveal(el){ el.classList.add('show'); scrollMsgIntoView(el); }
 function runChat(){
-  [m1,m2,m3,m4].forEach(m=>m.classList.remove('show'));
   typ.classList.remove('show'); btn.classList.remove('tapped');
   odoRender(marginOdo,'$ 0');
   if(chatBody) chatBody.scrollTo({top:0,behavior:'auto'});
+  // primer mensaje YA visible
+  m1.classList.add('show');
+  [m2,m3,m4].forEach(m=>m.classList.remove('show'));
   const T=[];
-  T.push(setTimeout(()=>reveal(m1), 900));
-  T.push(setTimeout(()=>reveal(m2), 2600));
-  T.push(setTimeout(()=>{ typ.classList.add('show'); chatScroll(); }, 3400));
-  T.push(setTimeout(()=>{ typ.classList.remove('show'); reveal(m3);
+  // m2 (mensaje del usuario): aparece abajo en la ventana y se queda ~2.4s para leerse tranquilo
+  T.push(setTimeout(()=>{ m2.classList.add('show'); scrollMsgIntoView(m2); }, 1500));
+  // typing recién a los 3.9s -> el mensaje verde tuvo 2.4s solo en pantalla
+  T.push(setTimeout(()=>{ typ.classList.add('show'); scrollMsgIntoView(typ); }, 3900));
+  // m3 (P&L, alto): scroll a su inicio para ver el encabezado
+  T.push(setTimeout(()=>{ typ.classList.remove('show'); m3.classList.add('show');
+    if(chatBody) chatBody.scrollTo({top: Math.max(0, m3.offsetTop - 14), behavior:'smooth'});
     const t0=performance.now(), dur=1100, target=8370;
     (function step(now){ const p=Math.min((now-t0)/dur,1), e=1-Math.pow(1-p,3);
       odoSet(marginOdo, '$ '+(Math.round(target*e/10)*10).toLocaleString('es-AR'));
       if(p<1) requestAnimationFrame(step);
     })(t0);
-    setTimeout(chatScroll, 120);   /* card is tall, settle scroll after it lays out */
-  }, 5200));
-  T.push(setTimeout(()=>{ btn.classList.add('tapped'); chatScroll(); }, 8200));
-  T.push(setTimeout(()=>reveal(m4), 8900));
-  T.push(setTimeout(runChat, 15000));
+  }, 5300));
+  // botón aprobar
+  T.push(setTimeout(()=>{ btn.classList.add('tapped'); chatScroll(); }, 7800));
+  T.push(setTimeout(()=>{ m4.classList.add('show'); scrollMsgIntoView(m4); }, 8500));
+  // pausa para leer la confirmación, luego reinicia
+  T.push(setTimeout(runChat, 11200));
 }
 if(RM){ [m1,m2,m3,m4].forEach(m=>m.classList.add('show')); odoRender(marginOdo,'$ 8.370'); }
 else runChat();
