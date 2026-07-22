@@ -68,10 +68,10 @@ if(!RM){ (function loop(t){ activeWaves.forEach(w=>drawWave(w,t)); requestAnimat
 document.querySelectorAll('canvas[data-waves]').forEach(cv=>{try{initWave(cv)}catch(e){}});
 try{ /* herowaves */
 const wa = document.getElementById('wavesA');
-wa.dataset.waves = JSON.stringify({c1:'#79C900',c2:'#12A46B',n:11,amp:16,gap:28,y0:0.95,y1:0.18,bend:-0.12,s0:0.75,s1:1,thin:true,op:0.28,spd:4.6,dyn:true});
+wa.dataset.waves = JSON.stringify({c1:'#79C900',c2:'#12A46B',n:11,amp:20,gap:28,y0:0.95,y1:0.18,bend:-0.12,s0:0.75,s1:1,thin:true,op:0.36,spd:4.6,dyn:true});
 initWave(wa);
 const wb = document.getElementById('wavesB');
-wb.dataset.waves = JSON.stringify({c1:'#12A46B',c2:'#79C900',n:7,amp:13,gap:24,y0:0.7,y1:1.18,bend:0.06,s0:1,s1:0.55,thin:true,op:0.2,spd:4.0,dyn:true});
+wb.dataset.waves = JSON.stringify({c1:'#12A46B',c2:'#79C900',n:7,amp:17,gap:24,y0:0.7,y1:1.18,bend:0.06,s0:1,s1:0.55,thin:true,op:0.28,spd:4.0,dyn:true});
 initWave(wb);
 }catch(_eherowaves){}
 
