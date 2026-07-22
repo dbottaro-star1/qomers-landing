@@ -39,10 +39,19 @@ function drawWave(w, t){
       const u = Math.min(Math.max(x/W,0),1);
       const spread = (s0 + (s1-s0)*u) * gap;
       const base = (y0 + (y1-y0)*u) * H + bend*4*u*(1-u);
-      const wig = (.3 + .7*u);
-      const y = base + off*spread
-        + amp * Math.sin(u*4.6 + T*2.0 + i*.32) * wig
-        + amp * .42 * Math.sin(u*9.2 - T*1.35 + i*.5) * wig;
+      let y = base + off*spread;
+      if(cfg.dyn){
+        // hero: ondulación más rica y espacial — armónicos múltiples + deriva vertical
+        const env = .7 + .45*(1-u);   // amplitud fuerte en la zona visible (izq/centro)
+        y += Math.sin(T*.55 + i*.4) * amp * .45                     // deriva lenta (flota)
+           + amp * Math.sin(u*3.0 + T*1.6 + i*.5) * env             // onda larga primaria
+           + amp * .42 * Math.sin(u*6.4 - T*1.1 + i*.8) * env       // ripple secundario
+           + amp * .2 * Math.sin(u*12 + T*2.3 + i*1.1) * env;       // detalle fino
+      } else {
+        const wig = (.3 + .7*u);
+        y += amp * Math.sin(u*4.6 + T*2.0 + i*.32) * wig
+           + amp * .42 * Math.sin(u*9.2 - T*1.35 + i*.5) * wig;
+      }
       x<=-23 ? ctx.moveTo(x,y) : ctx.lineTo(x,y);
     }
     ctx.stroke();
@@ -59,10 +68,10 @@ if(!RM){ (function loop(t){ activeWaves.forEach(w=>drawWave(w,t)); requestAnimat
 document.querySelectorAll('canvas[data-waves]').forEach(cv=>{try{initWave(cv)}catch(e){}});
 try{ /* herowaves */
 const wa = document.getElementById('wavesA');
-wa.dataset.waves = JSON.stringify({c1:'#79C900',c2:'#12A46B',n:16,amp:6,gap:10,y0:1.02,y1:0.08,bend:-0.09,s0:0.16,s1:1,thin:true,op:0.22,spd:3.4});
+wa.dataset.waves = JSON.stringify({c1:'#79C900',c2:'#12A46B',n:11,amp:16,gap:28,y0:0.95,y1:0.18,bend:-0.12,s0:0.75,s1:1,thin:true,op:0.28,spd:4.6,dyn:true});
 initWave(wa);
 const wb = document.getElementById('wavesB');
-wb.dataset.waves = JSON.stringify({c1:'#12A46B',c2:'#79C900',n:10,amp:5,gap:8,y0:0.78,y1:1.3,bend:0.04,s0:1,s1:0.2,thin:true,op:0.13,spd:3.4});
+wb.dataset.waves = JSON.stringify({c1:'#12A46B',c2:'#79C900',n:7,amp:13,gap:24,y0:0.7,y1:1.18,bend:0.06,s0:1,s1:0.55,thin:true,op:0.2,spd:4.0,dyn:true});
 initWave(wb);
 }catch(_eherowaves){}
 
