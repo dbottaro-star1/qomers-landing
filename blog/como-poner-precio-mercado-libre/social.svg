@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0F1412"/>
+  <rect x="0" y="0" width="1200" height="8" fill="#79C900"/>
+  <text x="80" y="120" font-family="'Space Grotesk',sans-serif" font-size="26" font-weight="700" letter-spacing="3" fill="#79C900">GUÍA</text>
+  <text x="80" y="250" font-family="'Space Grotesk',sans-serif" font-size="58" font-weight="700" fill="#FBFBF9"><tspan x="80" dy="0">Cómo poner precio en</tspan><tspan x="80" dy="74">Mercado Libre para no</tspan><tspan x="80" dy="74">vender a pérdida</tspan></text>
+  <text x="80" y="560" font-family="'Space Grotesk',sans-serif" font-size="34" font-weight="700" fill="#FBFBF9">Qomers</text>
+  <text x="80" y="595" font-family="'Inter',sans-serif" font-size="20" fill="#8A928D">El copiloto de WhatsApp para tu e-commerce</text>
+</svg>

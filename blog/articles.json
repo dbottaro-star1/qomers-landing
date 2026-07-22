@@ -9,6 +9,377 @@
   },
   "articles": [
     {
+      "slug": "costo-envio-gratis-mercado-libre",
+      "title": "El envío gratis de Mercado Libre no es gratis: cuánto te sale realmente",
+      "seo_title": "Cuánto cuesta el envío gratis en Mercado Libre (y quién lo paga) | Qomers",
+      "description": "El “envío gratis” lo termina pagando el vendedor. Te mostramos cuánto se lleva de tu margen en cada venta, cómo cambia según el precio y el peso, y cómo saber si te conviene ofrecerlo.",
+      "keywords": "envío gratis mercado libre, costo de envío mercado libre, subsidio de envío, quién paga el envío en mercado libre, mercado envíos",
+      "category": "Guía",
+      "tag": "Costos de plataforma",
+      "date": "2026-07-22",
+      "date_iso": "2026-07-22T11:00:00-03:00",
+      "date_display": "22 de julio, 2026",
+      "read_minutes": 6,
+      "hero_stat_1": "0%",
+      "hero_stat_1_label": "paga el comprador por el envío gratis",
+      "hero_stat_2": "100%",
+      "hero_stat_2_label": "lo cubrís vos, de tu margen",
+      "featured": false,
+      "body": [
+        {
+          "type": "lead",
+          "text": "En Mercado Libre, el cartel de “envío gratis” es uno de los mejores imanes de ventas que existen. El problema está en la palabra “gratis”: para el comprador lo es, para vos no. Ese costo sale de algún lado, y casi siempre sale de tu margen sin que lo veas con claridad."
+        },
+        {
+          "type": "h2",
+          "text": "¿Quién paga el envío gratis en Mercado Libre?"
+        },
+        {
+          "type": "p",
+          "text": "Lo pagás vos. Cuando activás envío gratis en una publicación que supera el precio mínimo, Mercado Libre le cobra el envío al vendedor y te descuenta una parte según tu reputación y el tipo de envío (Flex, Colecta o Full). El comprador ve “gratis”; vos ves un descuento más en la liquidación. La plataforma subsidia una parte en algunos casos, pero la porción del vendedor es real y, en productos de precio medio, suele ser el segundo costo más grande después de la mercadería."
+        },
+        {
+          "type": "h2",
+          "text": "Cuánto se lleva de tu margen, con números"
+        },
+        {
+          "type": "p",
+          "text": "Tomemos una venta de $41.900 con envío gratis. Así queda el margen real cuando sumás el envío a la {{comisión}}, los impuestos y el costo de la mercadería:",
+          "links": {
+            "comisión": {
+              "url": "../cuanto-cobra-mercado-libre-comisiones/index.html"
+            }
+          }
+        },
+        {
+          "type": "pl",
+          "rows": [
+            {
+              "k": "Venta bruta",
+              "v": "$ 41.900",
+              "kind": "neutral"
+            },
+            {
+              "k": "Comisión de Mercado Libre",
+              "v": "− $ 5.030",
+              "kind": "down"
+            },
+            {
+              "k": "Envío (tu parte)",
+              "v": "− $ 3.140",
+              "kind": "down"
+            },
+            {
+              "k": "Impuestos y retenciones",
+              "v": "− $ 3.960",
+              "kind": "down"
+            },
+            {
+              "k": "Costo de mercadería",
+              "v": "− $ 21.400",
+              "kind": "down"
+            },
+            {
+              "k": "Margen neto real",
+              "v": "$ 8.370 · 20,0%",
+              "kind": "total"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "El envío solo se llevó más de un 7% del precio de venta. En un producto más barato o más pesado, esa proporción crece rápido: el mismo envío de $3.140 sobre una venta de $18.000 ya es más del 17% del precio. Por eso el envío gratis puede ser rentable en un artículo y destruir el margen en otro casi idéntico."
+        },
+        {
+          "type": "callout",
+          "text": "El envío gratis no es bueno ni malo. Es un costo. El error es tratarlo como si fuera cero."
+        },
+        {
+          "type": "h2",
+          "text": "Cuándo conviene ofrecer envío gratis (y cuándo no)"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Conviene cuando el margen del producto absorbe el costo del envío y todavía te deja ganancia sana. Ahí el envío gratis es una máquina de conversión.",
+            "No conviene en productos de precio bajo y peso alto: el envío se come una porción tan grande que terminás vendiendo para trabajar gratis o a pérdida.",
+            "Cuidado con aplicarlo a todo el catálogo de una. Lo que funciona en tu producto estrella puede fundir a tu producto de entrada.",
+            "Si igualás a un competidor que tiene envío gratis, primero fijate si tu costo de envío se parece al suyo. Puede tener mejor reputación, menos descuento o estar más cerca de un depósito de Mercado Envíos."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Cómo saber tu margen real con el envío incluido"
+        },
+        {
+          "type": "p",
+          "text": "El único modo de decidir bien es ver el margen neto de cada publicación con el envío ya descontado, no el precio de venta a secas. Qomers {{conecta tu tienda}} y calcula ese número por vos: descuenta comisión, envío, impuestos y costo de mercadería, y te lo muestra por WhatsApp para cada producto. Si un competidor mueve el precio, te avisa y te dice si igualarlo sigue siendo rentable con el envío puesto. Podés ver {{todos los planes}} o {{empezar tu prueba gratis}}.",
+          "links": {
+            "conecta tu tienda": {
+              "url": "../../index.html#integraciones"
+            },
+            "todos los planes": {
+              "url": "../../index.html#precios"
+            },
+            "empezar tu prueba gratis": {
+              "url": "https://wa.me/59899677738?text=Hola%20Qomers%2C%20quiero%20empezar%20mi%20prueba%20gratis%20de%2014%20d%C3%ADas.",
+              "external": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "impuestos-vender-mercado-libre",
+      "title": "Los impuestos de vender en Mercado Libre (y por qué te descuadran el margen)",
+      "seo_title": "Qué impuestos se pagan por vender en Mercado Libre | Qomers",
+      "description": "Retenciones de IVA e Ingresos Brutos, monotributo o responsable inscripto: los impuestos son el costo que más vendedores subestiman. Te explicamos cuáles aparecen en cada venta y cómo impactan tu ganancia real.",
+      "keywords": "impuestos mercado libre, retenciones mercado libre, ingresos brutos ecommerce, iva mercado libre, monotributo vender online",
+      "category": "Guía",
+      "tag": "Impuestos y márgenes",
+      "date": "2026-07-22",
+      "date_iso": "2026-07-22T10:00:00-03:00",
+      "date_display": "22 de julio, 2026",
+      "read_minutes": 7,
+      "hero_stat_1": "3+",
+      "hero_stat_1_label": "impuestos y retenciones por venta",
+      "hero_stat_2": "1",
+      "hero_stat_2_label": "es el que casi nadie descuenta a tiempo",
+      "featured": false,
+      "body": [
+        {
+          "type": "lead",
+          "text": "De todos los costos que se comen la ganancia de un vendedor de e-commerce, los impuestos son el más silencioso. No aparecen en la publicación, no te los cobra un competidor y muchas veces impactan semanas después de la venta. Por eso son el costo que más gente subestima cuando calcula “cuánto gané”."
+        },
+        {
+          "type": "h2",
+          "text": "Por qué los impuestos descuadran tu margen"
+        },
+        {
+          "type": "p",
+          "text": "Cuando vendés algo, el dinero que ves acreditado no es tu ganancia: es la venta menos la comisión y el envío. Todavía faltan los impuestos, y algunos no se descuentan en el momento sino que aparecen como retenciones en la liquidación, o los pagás por afuera según tu condición fiscal. Si tu {{cuenta de la ganancia}} no los incluye, todos los números te van a dar mejor de lo que realmente son.",
+          "links": {
+            "cuenta de la ganancia": {
+              "url": "../como-calcular-ganancia-real-mercado-libre/index.html"
+            }
+          }
+        },
+        {
+          "type": "h2",
+          "text": "Qué impuestos y retenciones aparecen al vender online"
+        },
+        {
+          "type": "p",
+          "text": "Depende de tu situación fiscal —no es lo mismo monotributo que responsable inscripto—, pero en general vas a cruzarte con estos:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "IVA: si sos responsable inscripto, una parte de tu precio es IVA que no es tuyo. En monotributo está incluido en la cuota, pero igual condiciona el precio al que podés vender con margen.",
+            "Ingresos Brutos: la mayoría de las provincias aplican retenciones de IIBB sobre tus ventas o acreditaciones. Aparecen en la liquidación de Mercado Pago y varían según jurisdicción.",
+            "Retenciones de impuesto a las ganancias: según montos y condición, la plataforma puede retenerte un porcentaje a cuenta.",
+            "El costo de tu categoría fiscal: la cuota de monotributo o los aportes del régimen general también son parte de lo que cuesta sostener la operación."
+          ]
+        },
+        {
+          "type": "callout",
+          "text": "Esta guía es general, no asesoramiento contable. Para tu caso puntual, tu contador es quien mejor puede ordenar los números."
+        },
+        {
+          "type": "h2",
+          "text": "Cómo pega en tu margen real"
+        },
+        {
+          "type": "p",
+          "text": "Volvamos a una venta de $41.900. Con la comisión y el envío ya descontados, todavía hay que restar la carga impositiva antes de cantar victoria:"
+        },
+        {
+          "type": "pl",
+          "rows": [
+            {
+              "k": "Venta bruta",
+              "v": "$ 41.900",
+              "kind": "neutral"
+            },
+            {
+              "k": "Comisión + envío",
+              "v": "− $ 8.170",
+              "kind": "down"
+            },
+            {
+              "k": "Impuestos y retenciones",
+              "v": "− $ 3.960",
+              "kind": "down"
+            },
+            {
+              "k": "Costo de mercadería",
+              "v": "− $ 21.400",
+              "kind": "down"
+            },
+            {
+              "k": "Margen neto real",
+              "v": "$ 8.370 · 20,0%",
+              "kind": "total"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Ese −$3.960 de impuestos es casi la mitad de lo que finalmente te queda como ganancia. Ignorarlo no lo hace desaparecer: solo hace que te enteres tarde, cuando la plata ya se fue."
+        },
+        {
+          "type": "h2",
+          "text": "Qué podés hacer para no llevarte sorpresas"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Sumá los impuestos a tu costo por venta desde el principio, no a fin de mes. Un precio “rentable” que no los contempla no lo es.",
+            "Mirá la liquidación de Mercado Pago con detalle: las retenciones están ahí, discriminadas.",
+            "Tené tu costo total —mercadería, plataforma e impuestos— en un solo lugar y actualizado. Si vive en planillas sueltas, la foto siempre llega tarde.",
+            "Apoyate en tu contador para tu régimen, y en una herramienta para ver el impacto venta por venta en tiempo real."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Ver el impuesto en cada venta, sin planillas"
+        },
+        {
+          "type": "p",
+          "text": "Qomers calcula tu {{margen real}} descontando comisiones, envíos e impuestos automáticamente, y te muestra cuánto te queda de verdad en cada publicación —por WhatsApp. Así el impuesto deja de ser una sorpresa de fin de mes y pasa a ser un número que ves antes de fijar un precio. {{Conectá tu tienda}} o {{empezá tu prueba gratis}} cuando quieras.",
+          "links": {
+            "margen real": {
+              "url": "../../index.html#valor"
+            },
+            "Conectá tu tienda": {
+              "url": "../../index.html#integraciones"
+            },
+            "empezá tu prueba gratis": {
+              "url": "https://wa.me/59899677738?text=Hola%20Qomers%2C%20quiero%20empezar%20mi%20prueba%20gratis%20de%2014%20d%C3%ADas.",
+              "external": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "como-poner-precio-mercado-libre",
+      "title": "Cómo poner precio en Mercado Libre para no vender a pérdida",
+      "seo_title": "Cómo poner precio a tus productos en Mercado Libre | Qomers",
+      "description": "Fijar el precio a ojo o copiando al de al lado es la forma más rápida de vender sin ganar. Una guía para poner precios que cubran todos tus costos y te dejen margen real.",
+      "keywords": "cómo poner precio mercado libre, estrategia de precios ecommerce, calcular precio de venta, markup mercado libre, precio rentable",
+      "category": "Guía",
+      "tag": "Pricing",
+      "date": "2026-07-22",
+      "date_iso": "2026-07-22T09:00:00-03:00",
+      "date_display": "22 de julio, 2026",
+      "read_minutes": 7,
+      "hero_stat_1": "4",
+      "hero_stat_1_label": "costos que tu precio tiene que cubrir",
+      "hero_stat_2": "20%",
+      "hero_stat_2_label": "de margen es una meta sana, no un lujo",
+      "featured": false,
+      "body": [
+        {
+          "type": "lead",
+          "text": "Poner precio es la decisión más importante y más apurada del e-commerce. La mayoría lo hace de dos formas: a ojo, sumándole un porcentaje al costo de la mercadería, o mirando al de al lado y poniéndose un peso más barato. Las dos tienen el mismo problema: ignoran casi todos los costos que hacen que una venta gane o pierda plata."
+        },
+        {
+          "type": "h2",
+          "text": "El problema de mirar solo el precio del competidor"
+        },
+        {
+          "type": "p",
+          "text": "El precio del de al lado es información pública, pero no te dice nada de sus costos. Quizás tiene mejor reputación y paga menos envío, compra la mercadería más barata o está en otra categoría fiscal. Copiar su precio es copiar su estrategia sin tener su estructura de costos. Podés terminar igualándolo y vendiendo a pérdida mientras él gana."
+        },
+        {
+          "type": "h2",
+          "text": "Los 4 costos que tu precio tiene que cubrir antes de dejarte ganancia"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Costo de la mercadería: lo que te cuesta el producto puesto en tu depósito.",
+            "Comisión de la plataforma: el porcentaje que se lleva Mercado Libre por cada venta, que cambia según la categoría y el tipo de publicación.",
+            "Envío: tu parte del costo de envío, sobre todo si ofrecés envío gratis.",
+            "Impuestos y retenciones: IVA, Ingresos Brutos y demás, según tu condición fiscal."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Recién cuando el precio cubre esos cuatro costos, lo que sobra es tu margen. Fijar el precio sin tenerlos todos a la vista es, literalmente, apostar."
+        },
+        {
+          "type": "h2",
+          "text": "La cuenta al revés: del margen que querés al precio que necesitás"
+        },
+        {
+          "type": "p",
+          "text": "En vez de partir del costo y sumarle un porcentaje al azar, partí del margen que querés ganar y sumá todos los costos hacia arriba. Para un producto de $21.400 de costo, buscando un 20% de margen neto:"
+        },
+        {
+          "type": "pl",
+          "rows": [
+            {
+              "k": "Costo de mercadería",
+              "v": "$ 21.400",
+              "kind": "neutral"
+            },
+            {
+              "k": "Comisión, envío e impuestos",
+              "v": "$ 12.130",
+              "kind": "neutral"
+            },
+            {
+              "k": "Margen objetivo (20%)",
+              "v": "$ 8.370",
+              "kind": "up"
+            },
+            {
+              "k": "Precio de venta necesario",
+              "v": "$ 41.900",
+              "kind": "total"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Con esa cuenta, $41.900 no es un número puesto a ojo: es el precio mínimo al que esa venta te deja el margen que buscás. Si el competidor está a $39.000, ya sabés que igualarlo te come parte de tu ganancia —y podés decidir con datos si te conviene hacerlo por posición o no."
+        },
+        {
+          "type": "callout",
+          "text": "Un buen precio no es el más barato ni el que copia al vecino. Es el más bajo al que todavía ganás lo que necesitás ganar."
+        },
+        {
+          "type": "h2",
+          "text": "Por qué el precio no se fija una vez y se olvida"
+        },
+        {
+          "type": "p",
+          "text": "Las comisiones cambian, los competidores mueven precios todos los días y tu costo de mercadería sube con cada reposición. Un precio que era rentable hace tres meses puede estar dejándote pérdida hoy sin que lo notes. Por eso el precio hay que revisarlo seguido, y para eso necesitás ver tu margen real actualizado, no una planilla de enero."
+        },
+        {
+          "type": "h2",
+          "text": "Poné precios con tu margen real a la vista"
+        },
+        {
+          "type": "p",
+          "text": "Qomers calcula el margen neto de cada publicación con todos los costos incluidos y te avisa cuando un cambio de comisión o un movimiento de la {{competencia}} pone en riesgo tu rentabilidad —todo por WhatsApp. Así fijás precios que ganan plata de verdad, no que solo parecen competitivos. {{Conectá tu tienda}} o {{mirá los planes}}.",
+          "links": {
+            "competencia": {
+              "url": "../monitorear-precios-competencia-mercado-libre/index.html"
+            },
+            "Conectá tu tienda": {
+              "url": "../../index.html#integraciones"
+            },
+            "mirá los planes": {
+              "url": "../../index.html#precios"
+            }
+          }
+        }
+      ]
+    },
+    {
       "slug": "como-martina-recupero-su-margen-y-el-buy-box",
       "title": "Cómo Martina recuperó su margen y volvió al primer puesto en dos horas",
       "seo_title": "Cómo volver al primer puesto en Mercado Libre sin perder margen | Qomers",
@@ -24,7 +395,7 @@
       "hero_stat_1_label": "de margen recuperado",
       "hero_stat_2": "2h",
       "hero_stat_2_label": "para volver al puesto #1",
-      "featured": true,
+      "featured": false,
       "body": [
         {
           "type": "lead",
