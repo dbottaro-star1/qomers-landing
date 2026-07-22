@@ -43,10 +43,11 @@ function drawWave(w, t){
       if(cfg.dyn){
         // hero: ondulación más rica y espacial — armónicos múltiples + deriva vertical
         const env = .7 + .45*(1-u);   // amplitud fuerte en la zona visible (izq/centro)
-        y += Math.sin(T*.55 + i*.4) * amp * .45                     // deriva lenta (flota)
-           + amp * Math.sin(u*3.0 + T*1.6 + i*.5) * env             // onda larga primaria
-           + amp * .42 * Math.sin(u*6.4 - T*1.1 + i*.8) * env       // ripple secundario
-           + amp * .2 * Math.sin(u*12 + T*2.3 + i*1.1) * env;       // detalle fino
+        const fx = cfg.fx || 1;       // multiplicador de frecuencia (más olas a lo ancho)
+        y += Math.sin(T*.55 + i*.4) * amp * .45                       // deriva lenta (flota)
+           + amp * Math.sin(u*3.0*fx + T*1.6 + i*.5) * env            // onda larga primaria
+           + amp * .42 * Math.sin(u*6.4*fx - T*1.1 + i*.8) * env      // ripple secundario
+           + amp * .2 * Math.sin(u*12*fx + T*2.3 + i*1.1) * env;      // detalle fino
       } else {
         const wig = (.3 + .7*u);
         y += amp * Math.sin(u*4.6 + T*2.0 + i*.32) * wig
