@@ -143,6 +143,19 @@ if(plWin){
 }
 }catch(_eplwin){}
 
+try{ /* card 02: stagger de las filas del ranking */
+const rank = document.querySelector('.rank');
+if(rank && !RM){
+  const rows = rank.querySelectorAll('.rank-row');
+  rank.classList.add('armed');
+  const rkIO = new IntersectionObserver(es=>es.forEach(e=>{
+    if(!e.isIntersecting) return; rkIO.unobserve(e.target);
+    rows.forEach((r,i)=>setTimeout(()=>r.classList.add('in'), i*160));
+  }),{threshold:.5});
+  rkIO.observe(rank);
+}
+}catch(_erankstg){}
+
 const io = new IntersectionObserver(es=>es.forEach(e=>{
   if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
 }),{threshold:.12});
