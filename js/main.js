@@ -181,14 +181,6 @@ if(RM){ [m1,m2,m3,m4].forEach(m=>m.classList.add('show')); odoRender(marginOdo,'
 else runChat();
 }catch(_echat){}
 
-/* waterfall grow */
-try{ /* waterfall */
-const wfIO = new IntersectionObserver(es=>es.forEach(e=>{
-  if(!e.isIntersecting) return; wfIO.unobserve(e.target);
-  e.target.querySelectorAll('.bar').forEach((b,i)=>{ b.style.height='4%'; setTimeout(()=>b.style.height=b.dataset.h, 150+i*140); });
-}),{threshold:.4});
-document.querySelectorAll('.wfall').forEach(w=>{ w.querySelectorAll('.bar').forEach(b=>b.style.height='4%'); wfIO.observe(w); });
-}catch(_ewaterfall){}
 
 /* loop stepper */
 if(!RM){

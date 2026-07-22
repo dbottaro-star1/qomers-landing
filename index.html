@@ -269,13 +269,21 @@
 
       <div class="bcard w3">
         <div class="b-art">
-          <canvas class="wv" data-waves='{"c1":"#79C900","c2":"#12A46B","n":6,"amp":10,"gap":8,"y0":0.2,"y1":0.4,"thin":true,"op":0.2}'></canvas>
-          <div class="wfall">
-            <div class="wf"><div class="bar" data-h="86%" style="height:86%"></div><div class="amt">$ 41.900</div><div class="lbl">Bruto</div></div>
-            <div class="wf"><div class="bar neg" data-h="18%" style="height:18%"></div><div class="amt">− $ 8.170</div><div class="lbl">Comisión</div></div>
-            <div class="wf"><div class="bar neg" data-h="10%" style="height:10%"></div><div class="amt">− $ 3.960</div><div class="lbl">Impuestos</div></div>
-            <div class="wf"><div class="bar neg" data-h="46%" style="height:46%"></div><div class="amt">− $ 21.400</div><div class="lbl">Costo</div></div>
-            <div class="wf"><div class="bar net" data-h="22%" style="height:22%"></div><div class="amt hot">$ 8.370</div><div class="lbl">Neto real</div></div>
+          <canvas class="wv" data-waves='{"c1":"#79C900","c2":"#12A46B","n":6,"amp":10,"gap":8,"y0":0.2,"y1":0.4,"thin":true,"op":0.13}'></canvas>
+          <div class="plc">
+            <div class="plc-side">
+              <div class="plc-cap">Parece que ganás</div>
+              <div class="plc-big muted">$ 41.900</div>
+            </div>
+            <div class="plc-mid">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+              <div class="plc-gap">− $ 33.530<span>en costos ocultos</span></div>
+            </div>
+            <div class="plc-side">
+              <div class="plc-cap">Te queda de verdad</div>
+              <div class="plc-big win">$ 8.370</div>
+              <div class="plc-sub">20% real</div>
+            </div>
           </div>
         </div>
         <div class="b-txt">
@@ -286,20 +294,28 @@
       </div>
 
       <div class="bcard w3">
-        <div class="b-art chart-art" style="height:260px">
-          <svg class="pchart" viewBox="0 0 1000 260" preserveAspectRatio="none" aria-hidden="true">
-            <g stroke="rgba(16,20,26,.07)" stroke-width="1">
-              <line x1="0" y1="55" x2="1000" y2="55"/><line x1="0" y1="110" x2="1000" y2="110"/>
-              <line x1="0" y1="165" x2="1000" y2="165"/><line x1="0" y1="215" x2="1000" y2="215"/>
-            </g>
-            <path class="ln comp" d="M0 140 L160 137 L320 134 L440 132 L560 132 L560 190 L700 192 L850 194 L1000 196" fill="none" stroke="#E5484D" stroke-width="2.4" stroke-dasharray="6 5"/>
-            <circle cx="560" cy="190" r="5" fill="#E5484D"/>
-            <path class="ln you" d="M0 152 L160 146 L320 138 L440 130 L560 122 L700 112 L850 101 L1000 92" fill="none" stroke="#4E8A00" stroke-width="3"/>
-            <path d="M0 152 L160 146 L320 138 L440 130 L560 122 L700 112 L850 101 L1000 92 L1000 260 L0 260 Z" fill="rgba(121,201,0,.08)"/>
-          </svg>
-          <div class="buybox">Posición <span class="pos" id="posOdo">#1</span><span style="color:var(--ink-3)">·</span><span id="posState" style="color:var(--emerald)">protegido</span></div>
-          <span class="rtag you" style="top:138px;left:16px">VOS · $41.900</span>
-          <span class="rtag comp" style="top:198px;right:14px">TECNOHOGAR · −8%</span>
+        <div class="b-art">
+          <canvas class="wv" data-waves='{"c1":"#79C900","c2":"#12A46B","n":6,"amp":9,"gap":8,"y0":0.85,"y1":0.7,"thin":true,"op":0.12}'></canvas>
+          <div class="rank">
+            <div class="rank-hd">Ranking · <span>"heladera no frost"</span></div>
+            <div class="rank-row you">
+              <span class="rk">1</span>
+              <span class="rk-name">VOS</span>
+              <span class="rk-tag ok">protegido</span>
+            </div>
+            <div class="rank-row">
+              <span class="rk">2</span>
+              <span class="rk-name">TECNOHOGAR</span>
+              <span class="rk-move down">−8% ▼</span>
+              <span class="rk-tag warn">te pisa</span>
+            </div>
+            <div class="rank-row">
+              <span class="rk">3</span>
+              <span class="rk-name">ELECTROYA</span>
+              <span class="rk-move">sin cambios</span>
+            </div>
+            <div class="rank-ft">Vigilado 24/7 · sin que muevas un dedo</div>
+          </div>
         </div>
         <div class="b-txt">
           <div class="b-num">02</div>
