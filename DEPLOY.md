@@ -45,8 +45,21 @@ Two risks are now structural rather than a flag someone has to remember:
   are marked `export-ignore` in `.gitattributes` instead of listed as rsync
   excludes. Add new ones there.
 
-`Qomers Logo/` is design source and untracked, so it cannot ship. Every image in
-`index.html` is an inlined base64 data URI — the deploy is just three files.
+`Qomers Logo/` is design source and untracked, so it cannot ship.
+
+## Images: inline or self-host, never hotlink
+
+Every image the site renders must be either an inlined base64 data URI or a file
+committed to the repo — **never an external hotlink** (e.g. `images.unsplash.com`).
+`index.html` uses data URIs throughout; the blog may also reference committed files
+under `blog/`.
+
+External hotlinks look fine in dev but render as grey broken-image boxes for any
+visitor whose ad/privacy blocker or network drops the request, and they rot when the
+host removes the asset. This already bit once: four Unsplash hotlinks in the hero
+case study and testimonials showed as broken greys until they were inlined
+(commit `b54ffca`). When adding blog images via `build_blog.py`, embed them as data
+URIs or commit them under `blog/` — do not paste a remote URL.
 
 ## Verify
 

@@ -14,6 +14,12 @@ Uso:
 Diseño: reusa el CSS del sitio (css/styles.css) + blog/blog.css, y replica
 nav/footer para consistencia visual. Todo el SEO (meta, Open Graph, Twitter,
 JSON-LD Article + BreadcrumbList) se genera por artículo.
+
+Imágenes: NUNCA hotlinkees a un host externo (images.unsplash.com y similares).
+Un hotlink se ve bien en dev pero aparece como caja gris rota para cualquier
+visitante cuyo bloqueador o red corte el request, y se pudre si el host borra el
+asset. Embebé cada imagen como data URI base64, o commiteála bajo blog/. Ver
+DEPLOY.md ("Images: inline or self-host, never hotlink").
 """
 import json, os, html, re, sys
 from datetime import datetime
