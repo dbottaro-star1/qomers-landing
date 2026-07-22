@@ -127,6 +127,22 @@ const cntIO = new IntersectionObserver(es=>es.forEach(e=>{
 document.querySelectorAll('.cnt').forEach(c=>cntIO.observe(c));
 }catch(_ecounters){}
 
+try{ /* card 01: cuenta la ganancia real al entrar en viewport */
+const plWin = document.getElementById('plWin');
+if(plWin){
+  const plIO = new IntersectionObserver(es=>es.forEach(e=>{
+    if(!e.isIntersecting) return; plIO.unobserve(e.target);
+    if(RM){ plWin.textContent='$ 8.370'; return; }
+    const target=8370, t0=performance.now(), dur=1200;
+    (function step(now){ const p=Math.min((now-t0)/dur,1), eased=1-Math.pow(1-p,3);
+      plWin.textContent='$ '+Math.round(target*eased).toLocaleString('es-AR');
+      if(p<1) requestAnimationFrame(step);
+    })(t0);
+  }),{threshold:.6});
+  plIO.observe(plWin);
+}
+}catch(_eplwin){}
+
 const io = new IntersectionObserver(es=>es.forEach(e=>{
   if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
 }),{threshold:.12});

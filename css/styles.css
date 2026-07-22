@@ -217,6 +217,10 @@ nav.scrolled{box-shadow:0 10px 30px -18px rgba(16,20,26,.14)}
 .rank-row .rk-tag.ok{background:rgba(18,164,107,.13);color:var(--emerald)}
 .rank-row .rk-tag.warn{background:rgba(229,72,77,.1);color:var(--red)}
 .rank-ft{font-family:var(--mono);font-size:10.5px;color:var(--ink-3);text-align:center;margin-top:6px}
+@media(prefers-reduced-motion:no-preference){
+  .rank-row .rk-tag.warn{animation:tepisa 2.6s ease-in-out infinite}
+  @keyframes tepisa{0%,100%{box-shadow:0 0 0 0 rgba(229,72,77,0)}45%{box-shadow:0 0 0 4px rgba(229,72,77,.14)}}
+}
 
 /* agentic loop */
 .loop{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:6px;padding:0 20px}
